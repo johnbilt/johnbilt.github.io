@@ -1,3 +1,4 @@
+---
 style: is-light
 height: is-medium
 items:
@@ -26,3 +27,4 @@ items:
     description: >
       The example description text goes here and can be multiple lines.
       For example, such as this.
+---
