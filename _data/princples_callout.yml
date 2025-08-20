@@ -1,21 +1,16 @@
 style: is-light
 height: is-medium
 items:
-  - title: Principle 1
-    subtitle: Timelines are the main currency
+  - title: 1. Timelines are the main currency
     icon: fa-space-shuttle
-    description: >
-      Common thread that binds together media and metadata
-  - title: Media is stored once and referenced
-    subtitle: Instead of shipping it from place to place
+    description: Common thread that binds together media and metadata
+  - title: 2. Media is stored once and referenced
+    description: Instead of shipping it from place to place
     icon: fa-wrench
-  - title: Example callout 3
-    subtitle: Example subtitle 3
+  - title: 3. Identity & timing the same for streams and stored
     icon: fa-github
     icon_brand: true
-    description: >
-      The example description text goes here and can be multiple lines.
-      For example, such as this.
+    description: Enables discovery, indexing and synchronization
   - title: Example callout 3
     subtitle: Example subtitle 3
     icon: fa-github
