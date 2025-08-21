@@ -1,10 +1,10 @@
 ---
-- name: Principles
-  link: /principles
-- name: The Media Store
-  link: /tams
-- name: Benefits
-  link: /benefits
+- name: About
+  link /about
+- name: News
+  link /news
+- name: Events
+  link /event
 - name: Resouces
   link: /resources
 ---
