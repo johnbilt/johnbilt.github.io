@@ -2,7 +2,8 @@
 layout: page
 title: Resources
 subtitle: The page subtitle
-hero_image: /images/resources_background.png
+hide_hero: true
+menubar: docs_menu
 ---
 
 Resources page
