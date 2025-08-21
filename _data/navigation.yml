@@ -2,7 +2,7 @@
 - name: About
   link: /about
 - name: News
-  link /news
+  link: /news
 - name: Events
   link: /event
 - name: Community
