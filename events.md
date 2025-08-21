@@ -2,6 +2,7 @@
 layout: page
 title: Events
 subtitle: Upcoming events relating to TAMS
+hero_image: /calendar.png
 ---
 
 # Event title
