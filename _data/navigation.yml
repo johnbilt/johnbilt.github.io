@@ -11,11 +11,11 @@
   link: /resources
   dropdown:
     - name: TAMS API Specification (BBC Github)
-      link:
+      link: https://github.com/bbc/tams
     - name: References TAMS API Implementation (AWS Github)
-      link:
-    - name: TAMS Toold Respository (AWS Github)
-      link:
+      link: https://github.com/awslabs/time-addressable-media-store
+    - name: TAMS Tools Respository (AWS Github)
+      link: https://github.com/aws-samples/time-addressable-media-store-tools
     - name: Implementation Guide (AWS Github Pages)
-      link:
+      link: https://aws-solutions-library-samples.github.io/media-entertainment/cloud-native-fast-turnaround-media-workflows-on-aws/index.html
 ---
