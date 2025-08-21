@@ -7,6 +7,15 @@
   link: /event
 - name: Community
   link: /community
-- name: Resouces
+- name: Resources
   link: /resources
+  dropdown:
+    - name: TAMS API Specification (BBC Github)
+      link:
+    - name: References TAMS API Implementation (AWS Github)
+      link:
+    - name: TAMS Toold Respository (AWS Github)
+      link:
+    - name: Implementation Guide (AWS Github Pages)
+      link:
 ---
