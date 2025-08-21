@@ -4,9 +4,9 @@
 - name: News
   link /news
 - name: Events
-  link /event
+  link: /event
 - name: Community
-  link /community
+  link: /community
 - name: Resouces
   link: /resources
 ---
