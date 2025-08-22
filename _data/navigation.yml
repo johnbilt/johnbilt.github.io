@@ -12,7 +12,7 @@
   dropdown:
     - name: TAMS API Specification (BBC Github)
       link: https://github.com/bbc/tams
-    - name: References TAMS API Implementation (AWS Github)
+    - name: Reference TAMS API Implementation (AWS Github)
       link: https://github.com/awslabs/time-addressable-media-store
     - name: TAMS Tools Respository (AWS Github)
       link: https://github.com/aws-samples/time-addressable-media-store-tools
