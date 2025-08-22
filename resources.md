@@ -4,6 +4,7 @@ title: Resources
 subtitle: The page subtitle
 hero_image: /images/resources_background.png
 callouts: resources_callout
+show_sidebar: false
 menubar: resouces_menu
 ---
 

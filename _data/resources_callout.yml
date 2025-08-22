@@ -5,20 +5,14 @@ items:
     icon: fa-github
     icon_brand: true
     description: >
-      Full specification for the TAMS API from BBC R&D
-
-      Includes key app notes on how to implement TAMS, plus records of all changes
+      Full specification for the TAMS API from BBC R&D.  Includes key app notes on how to implement TAMS, plus records of all changes
   - title: Reference TAMS API Implementation
     icon: fa-github
     icon_brand: true
     description: >
-      Implementation of the TAMS API released by AWS.
-
-      Designed to assist customers and partners start their journey with TAMS
+      Implementation of the TAMS API released by AWS.  Designed to assist customers and partners start their journey with TAMS
   - title: TAMS Tools Repository
     icon: fa-github
     icon_brand: true
     description: >
-      A collection of tools from AWS to compliment the API implementation.
-
-      Includes UI with embedded Omakase player, media processing and more
+      A collection of tools from AWS to compliment the API implementation.  Includes UI with embedded Omakase player, media processing and more
