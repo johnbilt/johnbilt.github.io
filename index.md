@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Front Page
-subtitle: This is the front page
+title: Time Addressable Media Store.org
+subtitle: Home of the TAMS community and news
 ---
 
 Main content goes here
