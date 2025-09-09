@@ -8,6 +8,7 @@ hero_image: /images/events_background.png
 # SMPTE London
 ### Tuesday 9th September 2025
 SMPTE UK will be meeting at Amazon's office for a pre-IBC session.  This will include both John Biltcliffe (AWS) giving an update on TAMS and plans for the IBC demo and David Michinson (Techex) talking about TAMS from the vendor perspective.
+
 [More information and Registration](https://www.smpte.org/sections/united-kingdom)
 
 ---
