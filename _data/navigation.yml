@@ -1,14 +1,14 @@
 ---
 - name: About
-  link: /about
+  link: /about/
 - name: Blog
-  link: /blog
+  link: /blog/
 - name: Events
-  link: /events
+  link: /events/
 - name: Community
-  link: /community
+  link: /community/
 - name: Resources
-  link: /resources
+  link: /resources/
   dropdown:
     - name: TAMS API Specification (BBC Github)
       link: https://github.com/bbc/tams
