@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Time Addressable Media Store.org
+title: Time Addressable Media Store
 subtitle: Home of the TAMS community and latest news
 show_sidebar: true
 hero_image: /images/home_background.png
