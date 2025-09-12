@@ -28,14 +28,16 @@ There is a panel session at 12.45pm on Sunday 14th at the AWS & Nvidia Innovatio
 # TAMS Enablement Session - London
 ### 7th & 8th October
 In person introduction session for those new to TAMS and is open to both end users and vendors.  The enblement session covers two days - the first focuses on what TAMS is, customer benefits and a walk through the API specification to understand how it works in detail.  The second day is an optional Hackathon session where participants can get hands on with the TAMS API and build with it while their are experts around to answer questions.  
-Sign up pages coming soon....
+
+[Click here to sign up](https://app.smartsheet.com/b/form/be603cef4c344ca5aa314e174e43726d)
 
 ---
 
 # TAMS Enablement Session - New York
 ### 20th & 21st October
 A repeat of the London session - In person introduction session for those new to TAMS and is open to both end users and vendors.  The enblement session covers two days - the first focuses on what TAMS is, customer benefits and a walk through the API specification to understand how it works in detail.  The second day is an optional Hackathon session where participants can get hands on with the TAMS API and build with it while their are experts around to answer questions.  
-Sign up pages coming soon....
+
+[Click here to sign up](https://app.smartsheet.com/b/form/7f6b9e4a08ee46609e3b1b74cf985397)
 
 ---
 
@@ -44,4 +46,5 @@ Sign up pages coming soon....
 ### Date Coming soon!
 
 The first ever TAMSCon will bring together the whole of the TAMS community for the first time.  We want to share with the community some of the progress over the last 12 months, as well as look forward to what is coming up.  This session is for those that have been in the community since the start or may just be starting to look at TAMS.  Session will be held principally in London, but there will be option for virtal participation.
+
 Sign up pages coming soon....
