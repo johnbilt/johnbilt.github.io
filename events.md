@@ -29,8 +29,6 @@ There is a panel session at 12.45pm on Sunday 14th at the AWS & Nvidia Innovatio
 ### 7th & 8th October
 In person introduction session for those new to TAMS and is open to both end users and vendors.  The enblement session covers two days - the first focuses on what TAMS is, customer benefits and a walk through the API specification to understand how it works in detail.  The second day is an optional Hackathon session where participants can get hands on with the TAMS API and build with it while their are experts around to answer questions.  
 
-[Click here to sign up](https://app.smartsheet.com/b/form/be603cef4c344ca5aa314e174e43726d)
-
 ---
 
 # TAMS Enablement Session - New York
