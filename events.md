@@ -32,10 +32,11 @@ In person introduction session for those new to TAMS and is open to both end use
 ---
 
 # TAMS Enablement Session - New York
-### 20th & 21st October
-A repeat of the London session - In person introduction session for those new to TAMS and is open to both end users and vendors.  The enblement session covers two days - the first focuses on what TAMS is, customer benefits and a walk through the API specification to understand how it works in detail.  The second day is an optional Hackathon session where participants can get hands on with the TAMS API and build with it while their are experts around to answer questions.  
+### POSTPONED - (20th & 21st October)
 
-[Click here to sign up](https://app.smartsheet.com/b/form/7f6b9e4a08ee46609e3b1b74cf985397)
+**We are postponing this enablement event - Dates TBC.** We will make some of the presentations available in the coming weeks - keep an eye on this site for more.
+
+A repeat of the London session - In person introduction session for those new to TAMS and is open to both end users and vendors.  The enblement session covers two days - the first focuses on what TAMS is, customer benefits and a walk through the API specification to understand how it works in detail.  The second day is an optional Hackathon session where participants can get hands on with the TAMS API and build with it while their are experts around to answer questions.  
 
 ---
 
