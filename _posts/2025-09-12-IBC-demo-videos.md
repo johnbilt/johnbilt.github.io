@@ -21,4 +21,4 @@ Distributing near-live news and sports content to partners remains inefficient, 
 
 ---
 
-Originall published onthe [AWS IBC Demo Showcase](https://aws.amazon.com/media/events/ibc2025-demos/create/)
+Originally published onthe [AWS IBC Demo Showcase](https://aws.amazon.com/media/events/ibc2025-demos/create/)
