@@ -14,5 +14,5 @@ menubar: about_menu
 </div>
 
 <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-<a href="https://timeaddressablemediastore.org/about" style="text-decoration: none;">← Previous</a>
+<a href="https://timeaddressablemediastore.org/about/fast-turnaround-challenges" style="text-decoration: none;">← Previous</a>
 </div>
