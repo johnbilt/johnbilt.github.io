@@ -1,0 +1,8 @@
+- label: Introduction to TAMS
+  items:
+    - name: What is TAMS?
+      link: about
+    - name: Fast-turnaround Challenges
+      link: about/fast-tunraround-challenges
+    - name: How can we use TAMS?
+      link: about/tams-usage
