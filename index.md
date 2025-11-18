@@ -10,6 +10,8 @@ hero_image: /images/home_background.png
 
 The Time Addressable Media Store (TAMS) is an open-source API specification based on a practical implementation of [Time Addressable Media principles](https://www.bbc.co.uk/rd/publications/tam) developed by BBC Research & Development. TAMS is designed around storing media chunks in object storage, presented through an open API that enables content-centric workflows rather than traditional file-based approaches.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W7WAV65duj0?si=OjyA3Diy2Y-8m-nr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Key Benefits
 
 **Convergence:** A single TAMS store can serve multiple different purposes and business units. This includes the broadcast, post-production, social media, and VOD teams all being able to source content from a single store. 
