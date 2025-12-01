@@ -1,0 +1,35 @@
+---
+layout: post
+title: Next Generation News Distribution on TAMS wins Broadcast Tech Innovation Award
+subtitle: IBC demo including Reuters and UK Parliamentary Broadcast Unit wins award
+image: /images/blog_images/2025_broadcast_awards_trophy.jpg
+hero_image: /images/blog_images/2025_broadcast_awards_team.jpg
+hero_darken: true
+---
+
+![The full team recieving the award](/images/blog_images/2025_broadcast_awards_team.jpg)
+
+On Thursday 27th November the [IBC demonstration of Next Generation News Distribution using TAMS](/2025/09/12/IBC-demo-videos.html) won the Broadcast Tech Innovation award.
+The award is for the work by Reuters, UK Parliamentary Broadcasting Unit and AWS did to build the multi-company demonstration.
+
+![Comments from the judges](/images/blog_images/2025_broadcast_awards_quote.jpg)
+
+The judges made some amazing comments:  "A total game changer for the industry, a uniquely collaborative effort and a fine example of how great the industry can be when it comes together".
+
+This award is in addition to the Industry Partnership award that TAMS won as the IABM Impact Awards at IBC 2025 for the same demonstration.
+
+A huge thank you to all the companies who were involved in the IBC demonstration:
+- AWS
+- Reuters
+- UK Parliamentary Broadcasting Unit
+- Elliot Media
+- Techex
+- In Sync
+- Sobey / Sony Hive MAM
+- Omakase Player
+- Mimir
+- Matrox 
+- CuttingRoom
+- Adobe
+- Drastic Technologies
+- Zixi
