@@ -2,19 +2,19 @@
 layout: post
 title: Next Generation News Distribution on TAMS wins Broadcast Tech Innovation Award
 subtitle: IBC demo including Reuters and UK Parliamentary Broadcast Unit wins award
-image: /images/blog_images/2025_broadcast_awards_trophy.jpg
+image: /images/blog_images/2025_broadcast_awards_nomination.jpg
 hero_image: /images/blog_images/2025_broadcast_awards_team.jpg
 hero_darken: true
 ---
 
-![The full team recieving the award](/images/blog_images/2025_broadcast_awards_team.jpg)
-
 On Thursday 27th November the [IBC demonstration of Next Generation News Distribution using TAMS](/2025/09/12/IBC-demo-videos.html) won the Broadcast Tech Innovation award.
 The award is for the work by Reuters, UK Parliamentary Broadcasting Unit and AWS did to build the multi-company demonstration.
 
-![Comments from the judges](/images/blog_images/2025_broadcast_awards_quote.jpg)
+![The full team recieving the award](/images/blog_images/2025_broadcast_awards_team.jpg)
 
 The judges made some amazing comments:  "A total game changer for the industry, a uniquely collaborative effort and a fine example of how great the industry can be when it comes together".
+
+![Comments from the judges](/images/blog_images/2025_broadcast_awards_quote.png)
 
 This award is in addition to the Industry Partnership award that TAMS won as the IABM Impact Awards at IBC 2025 for the same demonstration.
 
