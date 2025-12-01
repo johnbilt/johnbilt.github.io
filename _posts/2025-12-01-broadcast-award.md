@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Next Generation News Distribution on TAMS wins Broadcast Tech Innovation Award
-subtitle: IBC demo including Reuters and UK Parliamentary Broadcast Unit wins award
+title: TAMS wins Broadcast Tech Innovation Award
+subtitle: Next Generation News Distribution Powered by TAMS wins award
 image: /images/blog_images/2025_broadcast_awards_nomination.jpg
 hero_image: /images/blog_images/2025_broadcast_awards_team.jpg
 hero_darken: true
