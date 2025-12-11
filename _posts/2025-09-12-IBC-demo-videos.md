@@ -7,6 +7,8 @@ hero_image: /images/blog_images/ibc2025_stand.jpg
 hero_darken: true
 ---
 
+This blog includes the details of the two TAMS demonstrations at IBC 2025.  These can be seen on the AWS booth in Hall 5.
+
 ## Fast-turnaround workflows using TAMS
 
 Fast-turnaround workflows for news, sports, and live entertainment face challenges of vendor lock-in and inflexible or costly solutions. Customers can address these challenges by using the open-source Time-addressable Media Store (TAMS) API on AWS to ingest live feeds into a scalable timeline of media elements. The TAMS API provides a common means to access time-addressed media for multiple production workflow tools. This eliminates redundant data duplication and enables efficient workflows across platforms and teams. This demo shows an end-to-end cloud-native workflow using TAMS on AWS, including ingest, content manipulation in browser-based and virtual workstation-based editors, export for social media, AI analysis of segments, and playout to a live production gallery.
