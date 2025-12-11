@@ -9,7 +9,7 @@ hero_darken: true
 
 TVBEurope have publised a dedicated three page article focusing on TAMS in their December issue.
 
-![Image of the TVBEurope article]/images/blog_images/TVBEurope_TAMS_Article_Dec_2025.png)
+![Image of the TVBEurope article](/images/blog_images/TVBEurope_TAMS_Article_Dec_2025.png)
 
 The article features interviews with David Mitchinson from Techex, plus Chris Swan and John Biltcliffe from AWS.
 
