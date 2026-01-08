@@ -26,7 +26,6 @@ To store mono-essence media within TAMS, the first step is to create the separat
 On creation of the mono-essence Flows the relevant Source(s) will be automatically created in the TAMS store.  At this point the different media types will still be separate elements.
 
 ![Diagram showing the sequence of creating the different elements within the TAMS data model](/images/creation_sequence.png)
-*Sequence of creating the different elements within the TAMS data model*
 
 To represent the combination of audio and video into a single version, a multi-essence Flow should be created.  This flow has no essence parameters as there is no media stored against it.  The multi-flow definition includes a collection element and this should include the IDs and roles of all Flows to be collected together.
 
@@ -45,7 +44,6 @@ The creating system then uploads the media Object directly to the object storage
 
 After upload, the creating system then needs to call the TAMS API and register the Object against the given Flow.  As part of the registration, the creating system will declare the timerange where the Segment sits within the Flow timeline.  For the initial Segment registration the timing metadata within the media file is expected to match the timerange for the Segment.
 
-![Diagram showing the sequence of registering segments with the store](/images/egment_sequence.png)
-*Sequence of registering segments with the store*
+![Diagram showing the sequence of registering segments with the store](/images/segment_sequence.png)
 
 For [Edit by Reference](edit-by-reference) workflows it is possible to re-use a Segment.  This is done by registering a Segment on the new Flow timeline with the same Object ID as the original Object.  The store will recognise the Object re-use automatically.  At the point of registration it is also possible to specify only part of a Segment to be used and offsets from the internal file timing to that of the Flow timeline.

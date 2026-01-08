@@ -40,7 +40,6 @@ To enable the user to quickly access the right piece of content, the presentatio
 The key to making this process as simple as possible at the point of search is to normalise the data on the way in and the consistency between the different components.
 
 ![Sequence diagram showing how TAMS and TADS could fit together](/images/tams_and_tads.png)
-*Process of working with TAMS and TADS*
 
 ### TADS Design
 
