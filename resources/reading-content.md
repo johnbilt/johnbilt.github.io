@@ -14,7 +14,7 @@ If locating content directly within a store the usual place to start would be th
 Once the required top level Source has been located it is then possible to read down through the data model.  Two routes are possible depending on what is required – either going via the collected Sources or via the multi-essence Flow.
 
 ![Diagram showing routes to read through the TAMS data model](/images/read_routes.png)
-*Routes to read through the TAMS data model*
+<p style="text-align: center;">Routes to read through the TAMS data model</p>
 
 The reading system will need to locate the appropriate Flows that match the task that is needs to fulfil.  This may mean reading multiple Flows (eg high quality and proxy video) and then deciding which is most appropriate to use.
 
