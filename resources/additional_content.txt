@@ -1,0 +1,9 @@
+A set of scripts walking through the process to create a set of flows and sources are available in the guidance repository.  The process of using the scripts are described in the section on the [AWS TAMS Sample Scripts](9_TAMS_sample_scripts.html).
+
+A script showing this process is available in the guidance repository and the process of using it to upload content is described in the section on the [AWS TAMS Sample Scripts](9_TAMS_sample_scripts.html).
+
+
+
+
+
+

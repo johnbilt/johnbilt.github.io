@@ -1,14 +1,16 @@
-- label: Resources Menu
+- label: TAMS Data Model
   items:
-    - name: Home
-      link: /
-    - name: Pages
-      link: #
-      items:
-        - name: Page With Sidebar 
-          link: /page-1/
-        - name: Page Without Sidebar
-          link: /page-2/
-        - name: Page With Menubar
-          link: /page-3/
-
+    - name: Introduction
+      link: /resources/data-model
+- label: Working with TAMS
+  items:
+    - name: Creating Content
+      link: /resources/creating-content
+    - name: Reading Content
+      link: /resources/reading-content
+    - name: Deleting Content
+      link: /resources/deleting-content
+    - name: Edit by Reference
+      link: /resources/edit-by-reference
+    - name: Time Based Metadata
+      link: /resources/time-based-metadata
