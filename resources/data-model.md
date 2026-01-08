@@ -3,7 +3,7 @@ layout: page
 title: TAMS Data Model
 subtitle: Introduction
 hero_image: /images/resources_background.png
-show_sidebar: true
+show_sidebar: false
 menubar: resources_menu
 ---
 

@@ -3,7 +3,7 @@ layout: page
 title: Working with TAMS
 subtitle: Creating Content in TAMS
 hero_image: /images/resources_background.png
-show_sidebar: true
+show_sidebar: false
 menubar: resources_menu
 ---
 
