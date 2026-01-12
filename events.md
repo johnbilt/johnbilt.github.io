@@ -9,7 +9,7 @@ hero_image: /images/events_background.png
 
 ### Wednesday, January 28th at 4pm GMT
 
-Join us for the Second TAMS Community Call - a brand new monthly gathering for our growing community!
+Join us for the Second TAMS Community Call - the regular gathering for our growing community!
 
 What to expect:
 
