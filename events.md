@@ -31,9 +31,14 @@ Whether you're just getting started with TAMS or you're a seasoned pro, this is 
 
 ### Thursday, February 12th at 4pm GMT
 
-TVBEurope and techex present a webinar to explore what TAMS is, its global potential, and the agility it can deliver in near-live editing and production workflows.  The webinar will be chaired by Jenny Priestley (Content Director, TVBEurope) and will feature contributions from Dave Mitchinson (Solutions Director, Techex), Kevin Morris (Product Manager, BBC), John Biltcliffe (Senior Solutions Architect, AWS) and James Elliott (Managing Director, Elliott Media).
+TVBEurope and techex present a webinar to explore what TAMS is, its global potential, and the agility it can deliver in near-live editing and production workflows.  The webinar will be chaired by Jenny Priestley (Content Director, TVBEurope) and will feature contributions from:
 
-[More details available here]([Register here for the Zoom call details](https://amazon.zoom.us/webinar/register/WN_vtwfeKCWQoiGt943Zx5dVA#/registration))
+* Dave Mitchinson (Solutions Director, Techex)
+* Kevin Morris (Product Manager, BBC)
+* John Biltcliffe (Senior Solutions Architect, AWS)
+* James Elliott (Managing Director, Elliott Media)
+
+[More details available here](https://events.futureb2b.com/register-now/1831/is-it-primetime-for-tams-how-open-source-software-defined-tech-is-breaking-broadcast-barriers/)
 
 ---
 
