@@ -37,6 +37,7 @@ TVBEurope and techex present a webinar to explore what TAMS is, its global poten
 * Kevin Morris (Product Manager, BBC)
 * John Biltcliffe (Senior Solutions Architect, AWS)
 * James Elliott (Managing Director, Elliott Media)
+* Rebecca Light (Group Head of Content Mngmt & Quality Control - Content Technology & Innovation, Sky)
 
 [More details available here](https://events.futureb2b.com/register-now/1831/is-it-primetime-for-tams-how-open-source-software-defined-tech-is-breaking-broadcast-barriers/)
 
