@@ -53,7 +53,7 @@ Day 1:
 * Customer and Vendor Session
 * TAMS Governance
 * Collaboration and Industry Events
-* Breakout tracks: TAMS 101 | TAMS For Buisness Leaders | Advanced Sessions
+* Breakout tracks: TAMS 101, TAMS For Buisness Leaders, Advanced Sessions
 
 Day 2:
 * TAMS Interop
