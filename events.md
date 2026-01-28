@@ -44,7 +44,7 @@ TVBEurope and techex present a webinar to explore what TAMS is, its global poten
 
 # TAMSCon #1 - London and Virtual
 
-### Date Coming soon!
+### Tuesday 10th and Wednesday 11th March
 
 The first ever TAMSCon will bring together the whole of the TAMS community for the first time.  We want to share with the community some of the progress over the last 12 months, as well as look forward to what is coming up.  This session is for those that have been in the community since the start or may just be starting to look at TAMS.  Session will be held principally in London, but there will be option for virtal participation.
 
