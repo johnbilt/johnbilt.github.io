@@ -2,6 +2,9 @@
 layout: post
 title: Moving TAMS towards Open Governance
 hero_darken: true
+image: /images/blog_images/2026_governance_blog_header.jpg
+hero_image: /images/blog_images/2026_governance_blog_header.jpg
+hero_darken: true
 ---
 
 In 2023 BBC Research & Development made the first open source release of TAMS at [https://github.com/bbc/tams/](https://github.com/bbc/tams/), and has owned the repository and co-ordinated contributions ever since. 
