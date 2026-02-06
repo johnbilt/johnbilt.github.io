@@ -2,8 +2,8 @@
 layout: post
 title: TAMS Technical Steering Committee
 subtitle: Selection and appointment of TSC members
-image: /images/blog_images/2026_governance_blog_header.jpg
-hero_image: /images/blog_images/2026_governance_blog_header.jpg
+image: /images/blog_images/tams-tsc-selection.png
+hero_image: /images/blog_images/tams-tsc-selection.png
 hero_darken: true
 ---
 
