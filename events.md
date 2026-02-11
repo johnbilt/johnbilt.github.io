@@ -5,28 +5,6 @@ subtitle: Upcoming events relating to TAMS
 hero_image: /images/events_background.png
 ---
 
-# TAMS Community Call!
-
-### Wednesday, January 28th at 4pm GMT
-
-Join us for the Second TAMS Community Call - the regular gathering for our growing community!
-
-What to expect:
-
-• TAMS Updates - Latest news on events and software releases
-
-• Community Spotlight - Share your TAMS use cases and launches
-
-• Features & Roadmap
-
-• Voice of the Vendor
-
-Whether you're just getting started with TAMS or you're a seasoned pro, this is your chance to connect, learn, and shape the future of our community!
-
-[Register here for the Zoom call details](https://amazon.zoom.us/webinar/register/WN_vtwfeKCWQoiGt943Zx5dVA#/registration)
-
----
-
 # Webinar: Is It Primetime for TAMS?
 
 ### Thursday, February 12th at 4pm GMT
@@ -49,16 +27,29 @@ TVBEurope and techex present a webinar to explore what TAMS is, its global poten
 
 The first ever TAMSCon will bring together the whole of the TAMS community for the first time.  We want to share with the community some of the progress over the last 12 months, as well as look forward to what is coming up.  This session is for those that have been in the community since the start or may just be starting to look at TAMS.  Session will be held principally in London at the AWS office in Holborn, but there will be option for virtal participation.
 
-Day 1:
-* Customer and Vendor Session
-* TAMS Governance
-* Collaboration and Industry Events
-* Breakout tracks: TAMS 101, TAMS For Buisness Leaders, Advanced Sessions
+## Day 1
+The morning will be a set of presentations including:
 
-Day 2:
-* TAMS Interop
-* TAMS Surgery
+* Updates from some key customers on where they are in their TAMS adoption journeys
+* Quick fire sessions from a selection of new partners who have deployed TAMS support in their products
+* An update on the TAMS Governance and a chance to ask questions about what it means
 
-CALL FOR CONTENT - we'd love to hear ideas both contributions of sessions and suggestions for what we should include!
+The afternoon will break out into a set of different tracks:
 
+1. For those new to TAMS there will be a 101 stream focusing on what TAMS is and how it works
+2. A focus on what TAMS emans for buisnes leaders and operational teams
+3. Advanced technical session focusing on some of the proposed changes to the TAMS specification
+
+The day will end with drinks and a chance to network
+
+## Day 2
+The second day is a more informal session and is not mandatory to attend both days.  The day will include 3 key workstreams:
+
+1. For partners with TAMS capable products then there will be a chance to test interoperability between them and focus on ensuring consistency across the TAMS experience
+
+2. We will be running a hands on workshop for those new to TAMS who would like to dive deeper and understand it better.  This will include deploying a TAMS instance, creating content and then deploying the TAMS Tools to interact with the store.
+
+3. A drop in TAMS Surgery will be avialable with experts on hand to answer questions, talk through workflows and help think about what TAMS could mean for your company.
+
+## Sigm up
 Sign up pages coming soon....
