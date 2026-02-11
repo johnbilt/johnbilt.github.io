@@ -27,7 +27,7 @@ TVBEurope and techex present a webinar to explore what TAMS is, its global poten
 
 The first ever TAMSCon will bring together the whole of the TAMS community for the first time.  We want to share with the community some of the progress over the last 12 months, as well as look forward to what is coming up.  This session is for those that have been in the community since the start or may just be starting to look at TAMS.  Session will be held principally in London at the AWS office in Holborn, but there will be option for virtal participation.
 
-## Day 1
+### Day 1
 The morning will be a set of presentations including:
 
 * Updates from some key customers on where they are in their TAMS adoption journeys
@@ -42,7 +42,7 @@ The afternoon will break out into a set of different tracks:
 
 The day will end with drinks and a chance to network
 
-## Day 2
+### Day 2
 The second day is a more informal session and is not mandatory to attend both days.  The day will include 3 key workstreams:
 
 1. For partners with TAMS capable products then there will be a chance to test interoperability between them and focus on ensuring consistency across the TAMS experience
@@ -51,5 +51,5 @@ The second day is a more informal session and is not mandatory to attend both da
 
 3. A drop in TAMS Surgery will be avialable with experts on hand to answer questions, talk through workflows and help think about what TAMS could mean for your company.
 
-## Sigm up
+### Sign up
 Sign up pages coming soon....
