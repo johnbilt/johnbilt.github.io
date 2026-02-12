@@ -52,4 +52,4 @@ The second day is a more informal session and is not mandatory to attend both da
 3. A drop in TAMS Surgery will be avialable with experts on hand to answer questions, talk through workflows and help think about what TAMS could mean for your company.
 
 ### Sign up
-[https://aws-experience.com/emea/uki/e/dec59/tamscon-1](Sign up here)
+[Sign up here](https://aws-experience.com/emea/uki/e/dec59/tamscon-1)
