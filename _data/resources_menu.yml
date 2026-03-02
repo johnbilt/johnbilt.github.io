@@ -2,6 +2,8 @@
   items:
     - name: Introduction
       link: /resources/data-model
+    - name: Mono Essence v Muxed MediaIntroduction
+      link: /resources/mono-v-muxed-essence
 - label: Working with TAMS
   items:
     - name: Creating Content
