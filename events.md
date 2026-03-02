@@ -5,22 +5,6 @@ subtitle: Upcoming events relating to TAMS
 hero_image: /images/events_background.png
 ---
 
-# Webinar: Is It Primetime for TAMS?
-
-### Thursday, February 12th at 4pm GMT
-
-TVBEurope and techex present a webinar to explore what TAMS is, its global potential, and the agility it can deliver in near-live editing and production workflows.  The webinar will be chaired by Jenny Priestley (Content Director, TVBEurope) and will feature contributions from:
-
-* Dave Mitchinson (Solutions Director, Techex)
-* Kevin Morris (Product Manager, BBC)
-* John Biltcliffe (Senior Solutions Architect, AWS)
-* James Elliott (Managing Director, Elliott Media)
-* Rebecca Light (Group Head of Content Mngmt & Quality Control - Content Technology & Innovation, Sky)
-
-[More details available here](https://events.futureb2b.com/register-now/1831/is-it-primetime-for-tams-how-open-source-software-defined-tech-is-breaking-broadcast-barriers/)
-
----
-
 # TAMSCon #1 - London and Virtual
 
 ### Tuesday 10th and Wednesday 11th March
