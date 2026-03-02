@@ -20,9 +20,13 @@ Day 1 of TAMSCon will focus on the highest priority topics in the community toda
 ### Day 2
 
 Day 2 of TAMSCon is a hands-on day, with attendees free to move between practical activities and formal *Breakout Sessions* throughout.  All tracks will be available to both virtual and in person attendees.
+
 *Deploy TAMS* is ideal for those new to TAMS, offering the chance to deploy your own personal TAMS instance, use the API to create content, and explore the open-source TAMS Tools across a variety of workflows.
+
 *Partner Interop* gives vendors the opportunity to test solutions end-to-end - from ingest and playback through to editing and export - as well as contribute ideas for a formal TAMS test suite.
+
 *TAMS Hackathon* is for those with existing TAMS knowledge, development skills, or a willingness to vibe code. A content store will be provided - including sessions from Day 1 - giving you the chance to build something new and share it with the group.
+
 *Drop-in Expert Sessions* are available throughout the day. Whether you have technical questions, want to explore the benefits of TAMS, or discuss how it fits your workflows, the TAMS experts will be on hand to help.
 
 ![Day 2 Full Agenda](/images/blog_images/tamscon1-agenda-day2.png)
