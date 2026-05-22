@@ -1,6 +1,6 @@
 - name: Example Partner
   product: Example Ingest Tool
-  image: /images/partners/example.png
+  image: /images/partners/techex.png
   description: >
     An example partner entry to demonstrate the format. Replace this with real partner data.
   link: https://example.com
@@ -10,7 +10,7 @@
 
 - name: Open Source Player
   product: OSS Playback Demo
-  image: /images/partners/oss-player.png
+  image: /images/partners/cuttingroom.png
   description: >
     An example open-source player that supports TAMS timelines natively in the browser.
   link: https://github.com/example/player
