@@ -7,41 +7,61 @@ layout: default
 </div>
 
 <!-- Filter Controls -->
-<div class="box" id="filter-controls">
-  <div class="columns is-multiline">
-    <div class="column is-12">
-      <p class="heading"><strong>Type</strong></p>
-      <div class="buttons are-small">
-        <button class="button is-info is-active filter-type" data-filter="all">All</button>
-        <button class="button is-info is-light filter-type" data-filter="open-source">Open Source</button>
-        <button class="button is-info is-light filter-type" data-filter="commercial">Commercial</button>
-        <button class="button is-info is-light filter-type" data-filter="professional-services">Professional Services</button>
+<details class="box" id="filter-controls">
+  <summary style="cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between;">
+    <strong>Filter Solutions</strong>
+    <span class="icon filter-chevron">
+      <i class="fas fa-chevron-down"></i>
+    </span>
+  </summary>
+  <div style="margin-top: 1rem;">
+    <div class="columns is-multiline">
+      <div class="column is-12">
+        <p class="heading"><strong>Type</strong></p>
+        <div class="buttons are-small">
+          <button class="button is-info is-active filter-type" data-filter="all">All</button>
+          <button class="button is-info is-light filter-type" data-filter="open-source">Open Source</button>
+          <button class="button is-info is-light filter-type" data-filter="commercial">Commercial</button>
+          <button class="button is-info is-light filter-type" data-filter="professional-services">Professional Services</button>
+        </div>
       </div>
-    </div>
-    <div class="column is-12">
-      <p class="heading"><strong>Function</strong></p>
-      <div class="buttons are-small">
-        <button class="button is-primary is-active filter-function" data-filter="all">All</button>
-        {% assign all_functions = "" %}
-        {% for partner in site.data.partners %}
-          {% for func in partner.functions %}
-            {% unless all_functions contains func %}
-              {% if all_functions == "" %}
-                {% assign all_functions = func %}
-              {% else %}
-                {% assign all_functions = all_functions | append: "," | append: func %}
-              {% endif %}
-            {% endunless %}
+      <div class="column is-12">
+        <p class="heading"><strong>Function</strong></p>
+        <div class="buttons are-small">
+          <button class="button is-primary is-active filter-function" data-filter="all">All</button>
+          {% assign all_functions = "" %}
+          {% for partner in site.data.partners %}
+            {% for func in partner.functions %}
+              {% unless all_functions contains func %}
+                {% if all_functions == "" %}
+                  {% assign all_functions = func %}
+                {% else %}
+                  {% assign all_functions = all_functions | append: "," | append: func %}
+                {% endif %}
+              {% endunless %}
+            {% endfor %}
           {% endfor %}
-        {% endfor %}
-        {% assign function_list = all_functions | split: "," | sort %}
-        {% for func in function_list %}
-        <button class="button is-primary is-light filter-function" data-filter="{{ func }}">{{ func | capitalize }}</button>
-        {% endfor %}
+          {% assign function_list = all_functions | split: "," | sort %}
+          {% for func in function_list %}
+          <button class="button is-primary is-light filter-function" data-filter="{{ func }}">{{ func | capitalize }}</button>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
-</div>
+</details>
+
+<style>
+  #filter-controls summary::-webkit-details-marker {
+    display: none;
+  }
+  #filter-controls .filter-chevron {
+    transition: transform 0.2s ease;
+  }
+  #filter-controls[open] .filter-chevron {
+    transform: rotate(180deg);
+  }
+</style>
 
 <p id="no-results" class="has-text-centered has-text-grey is-hidden" style="padding: 2rem;">
   No partners match the selected filters.
