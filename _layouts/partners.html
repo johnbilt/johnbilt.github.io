@@ -1,0 +1,155 @@
+---
+layout: default
+---
+
+<div class="content">
+  {{ content }}
+</div>
+
+<!-- Filter Controls -->
+<div class="box" id="filter-controls">
+  <div class="columns is-multiline">
+    <div class="column is-12">
+      <p class="heading"><strong>Type</strong></p>
+      <div class="buttons are-small">
+        <button class="button is-info is-active filter-type" data-filter="all">All</button>
+        <button class="button is-info is-light filter-type" data-filter="open-source">Open Source</button>
+        <button class="button is-info is-light filter-type" data-filter="commercial">Commercial</button>
+        <button class="button is-info is-light filter-type" data-filter="professional-services">Professional Services</button>
+      </div>
+    </div>
+    <div class="column is-12">
+      <p class="heading"><strong>Function</strong></p>
+      <div class="buttons are-small">
+        <button class="button is-primary is-active filter-function" data-filter="all">All</button>
+        {% assign all_functions = "" %}
+        {% for partner in site.data.partners %}
+          {% for func in partner.functions %}
+            {% unless all_functions contains func %}
+              {% if all_functions == "" %}
+                {% assign all_functions = func %}
+              {% else %}
+                {% assign all_functions = all_functions | append: "," | append: func %}
+              {% endif %}
+            {% endunless %}
+          {% endfor %}
+        {% endfor %}
+        {% assign function_list = all_functions | split: "," | sort %}
+        {% for func in function_list %}
+        <button class="button is-primary is-light filter-function" data-filter="{{ func }}">{{ func | capitalize }}</button>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<p id="no-results" class="has-text-centered has-text-grey is-hidden" style="padding: 2rem;">
+  No partners match the selected filters.
+</p>
+
+<!-- Partner Cards -->
+<div class="columns is-multiline" id="partner-cards">
+  {% for partner in site.data.partners %}
+  <div class="column is-4 partner-card"
+       data-type="{{ partner.type }}"
+       data-functions="{{ partner.functions | join: ',' }}">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column;">
+      {% if partner.image %}
+      <div class="card-image">
+        <figure class="image is-3by2">
+          <img src="{{ partner.image }}" alt="{{ partner.product }}" loading="lazy">
+        </figure>
+      </div>
+      {% endif %}
+      <div class="card-content" style="flex: 1;">
+        <p class="title is-5">{{ partner.product }}</p>
+        <p class="subtitle is-6">{{ partner.name }}</p>
+        <div class="content">
+          {{ partner.description }}
+        </div>
+        <div class="tags" style="margin-top: auto;">
+          {% if partner.type == "open-source" %}
+            <span class="tag is-success is-light">Open Source</span>
+          {% elsif partner.type == "commercial" %}
+            <span class="tag is-info is-light">Commercial</span>
+          {% elsif partner.type == "professional-services" %}
+            <span class="tag is-warning is-light">Professional Services</span>
+          {% endif %}
+          {% for func in partner.functions %}
+            <span class="tag is-primary is-light">{{ func | capitalize }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% if partner.link %}
+      <footer class="card-footer">
+        <a href="{{ partner.link }}" class="card-footer-item" target="_blank" rel="noopener noreferrer">
+          More Information
+        </a>
+      </footer>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<script>
+(function() {
+  var activeType = 'all';
+  var activeFunction = 'all';
+
+  var typeButtons = document.querySelectorAll('.filter-type');
+  var functionButtons = document.querySelectorAll('.filter-function');
+  var cards = document.querySelectorAll('.partner-card');
+  var noResults = document.getElementById('no-results');
+
+  function filterCards() {
+    var visibleCount = 0;
+    cards.forEach(function(card) {
+      var cardType = card.getAttribute('data-type');
+      var cardFunctions = card.getAttribute('data-functions').split(',');
+
+      var typeMatch = (activeType === 'all') || (cardType === activeType);
+      var funcMatch = (activeFunction === 'all') || (cardFunctions.indexOf(activeFunction) !== -1);
+
+      if (typeMatch && funcMatch) {
+        card.style.display = '';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    if (visibleCount === 0) {
+      noResults.classList.remove('is-hidden');
+    } else {
+      noResults.classList.add('is-hidden');
+    }
+  }
+
+  typeButtons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      typeButtons.forEach(function(b) {
+        b.classList.remove('is-active');
+        b.classList.add('is-light');
+      });
+      btn.classList.add('is-active');
+      btn.classList.remove('is-light');
+      activeType = btn.getAttribute('data-filter');
+      filterCards();
+    });
+  });
+
+  functionButtons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      functionButtons.forEach(function(b) {
+        b.classList.remove('is-active');
+        b.classList.add('is-light');
+      });
+      btn.classList.add('is-active');
+      btn.classList.remove('is-light');
+      activeFunction = btn.getAttribute('data-filter');
+      filterCards();
+    });
+  });
+})();
+</script>
