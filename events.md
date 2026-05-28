@@ -7,7 +7,7 @@ hero_image: /images/events_background.png
 
 # TAMS Community Call!
 
-### Wednesday, June 3rd at 4pm GMT
+### Wednesday, June 3rd at 4pm BST
 
 Join us for the next TAMS Community Call - the regular gathering for our growing community!
 
