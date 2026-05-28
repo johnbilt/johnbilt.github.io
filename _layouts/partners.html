@@ -19,16 +19,16 @@ layout: default
       <div class="column is-12">
         <p class="heading"><strong>Type</strong></p>
         <div class="buttons are-small">
-          <button class="button is-info is-active filter-type" data-filter="all">All</button>
-          <button class="button is-info is-light filter-type" data-filter="open-source">Open Source</button>
-          <button class="button is-info is-light filter-type" data-filter="commercial">Commercial</button>
-          <button class="button is-info is-light filter-type" data-filter="professional-services">Professional Services</button>
+          <button class="button is-warning is-active filter-type" data-filter="all">All</button>
+          <button class="button is-warning is-light filter-type" data-filter="open-source">Open Source</button>
+          <button class="button is-warning is-light filter-type" data-filter="commercial">Commercial</button>
+          <button class="button is-warning is-light filter-type" data-filter="professional-services">Professional Services</button>
         </div>
       </div>
       <div class="column is-12">
         <p class="heading"><strong>Function</strong></p>
         <div class="buttons are-small">
-          <button class="button is-primary is-active filter-function" data-filter="all">All</button>
+          <button class="button is-info is-active filter-function" data-filter="all">All</button>
           {% assign all_functions = "" %}
           {% for partner in site.data.partners %}
             {% for func in partner.functions %}
@@ -43,7 +43,7 @@ layout: default
           {% endfor %}
           {% assign function_list = all_functions | split: "," | sort %}
           {% for func in function_list %}
-          <button class="button is-primary is-light filter-function" data-filter="{{ func }}">{{ func | capitalize }}</button>
+          <button class="button is-info is-light filter-function" data-filter="{{ func }}">{{ func | capitalize }}</button>
           {% endfor %}
         </div>
       </div>
@@ -101,22 +101,22 @@ layout: default
         </figure>
       </div>
       {% endif %}
-      <div class="card-content" style="flex: 1;">
+      <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
         <p class="title is-5">{{ partner.product }}</p>
         <p class="subtitle is-6">{{ partner.name }}</p>
-        <div class="content partner-description">
+        <div class="content partner-description" style="flex: 1;">
           <span class="desc-text">{{ partner.description }}</span>
         </div>
-        <div class="tags" style="margin-top: auto;">
+        <div class="tags" style="margin-top: auto; padding-top: 0.5rem;">
           {% if partner.type == "open-source" %}
-            <span class="tag is-success is-light">Open Source</span>
+            <span class="tag is-warning is-light">Open Source</span>
           {% elsif partner.type == "commercial" %}
-            <span class="tag is-info is-light">Commercial</span>
+            <span class="tag is-warning is-light">Commercial</span>
           {% elsif partner.type == "professional-services" %}
             <span class="tag is-warning is-light">Professional Services</span>
           {% endif %}
           {% for func in partner.functions %}
-            <span class="tag is-primary is-light">{{ func | capitalize }}</span>
+            <span class="tag is-info is-light">{{ func | capitalize }}</span>
           {% endfor %}
         </div>
       </div>
