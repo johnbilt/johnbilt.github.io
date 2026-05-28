@@ -61,6 +61,26 @@ layout: default
   #filter-controls[open] .filter-chevron {
     transform: rotate(180deg);
   }
+  .partner-description {
+    position: relative;
+  }
+  .partner-description.is-truncated .desc-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .partner-description .desc-toggle {
+    display: inline-block;
+    margin-top: 0.25rem;
+    color: #003e80;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  .partner-description .desc-toggle:hover {
+    text-decoration: underline;
+  }
 </style>
 
 <p id="no-results" class="has-text-centered has-text-grey is-hidden" style="padding: 2rem;">
@@ -84,8 +104,8 @@ layout: default
       <div class="card-content" style="flex: 1;">
         <p class="title is-5">{{ partner.product }}</p>
         <p class="subtitle is-6">{{ partner.name }}</p>
-        <div class="content">
-          {{ partner.description }}
+        <div class="content partner-description">
+          <span class="desc-text">{{ partner.description }}</span>
         </div>
         <div class="tags" style="margin-top: auto;">
           {% if partner.type == "open-source" %}
@@ -114,6 +134,34 @@ layout: default
 
 <script>
 (function() {
+  // Description truncation
+  var MAX_CHARS = 250;
+  var descriptions = document.querySelectorAll('.partner-description');
+
+  descriptions.forEach(function(desc) {
+    var textEl = desc.querySelector('.desc-text');
+    var fullText = textEl.textContent.trim();
+
+    if (fullText.length > MAX_CHARS) {
+      desc.classList.add('is-truncated');
+      var toggle = document.createElement('span');
+      toggle.className = 'desc-toggle';
+      toggle.textContent = 'Show more';
+      desc.appendChild(toggle);
+
+      toggle.addEventListener('click', function() {
+        if (desc.classList.contains('is-truncated')) {
+          desc.classList.remove('is-truncated');
+          toggle.textContent = 'Show less';
+        } else {
+          desc.classList.add('is-truncated');
+          toggle.textContent = 'Show more';
+        }
+      });
+    }
+  });
+
+  // Card filtering
   var activeType = 'all';
   var activeFunction = 'all';
 
