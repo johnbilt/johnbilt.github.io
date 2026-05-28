@@ -135,15 +135,18 @@ layout: default
 <script>
 (function() {
   // Description truncation
-  var MAX_CHARS = 250;
   var descriptions = document.querySelectorAll('.partner-description');
 
   descriptions.forEach(function(desc) {
     var textEl = desc.querySelector('.desc-text');
-    var fullText = textEl.textContent.trim();
 
-    if (fullText.length > MAX_CHARS) {
-      desc.classList.add('is-truncated');
+    // Apply the clamp first, then check if content is actually overflowing
+    desc.classList.add('is-truncated');
+
+    // Compare scrollHeight vs clientHeight to detect real overflow
+    var isOverflowing = textEl.scrollHeight > textEl.clientHeight;
+
+    if (isOverflowing) {
       var toggle = document.createElement('span');
       toggle.className = 'desc-toggle';
       toggle.textContent = 'Show more';
@@ -158,6 +161,9 @@ layout: default
           toggle.textContent = 'Show more';
         }
       });
+    } else {
+      // Not actually truncated, remove the clamp class
+      desc.classList.remove('is-truncated');
     }
   });
 
