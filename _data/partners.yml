@@ -1,8 +1,9 @@
 - name: Techex
   product: tx darwin
+  logo: /images/partners/techex.png
   image: /images/partners/techex.png
   description: >
-    tx darwrin provides comprehensive manipulation and syncrhonisation of transport streams ahead of writing to a TAMS store. tx darwin is a software platform which runs in the cloud or on-prem supporting compressed or uncompressed media workflows. Now, it’s possible to synchronise miltiple feeds on writing, write as multiple essences or a single combined stream and even perform video.and audio confromance ahead of a TAMS media store.
+    tx darwrin provides comprehensive manipulation and syncrhonisation of transport streams ahead of writing to a TAMS store. tx darwin is a software platform which runs in the cloud or on-prem supporting compressed or uncompressed media workflows. Now, it's possible to synchronise miltiple feeds on writing, write as multiple essences or a single combined stream and even perform video.and audio confromance ahead of a TAMS media store.
   link: https://example.com
   type: commercial
   functions:
