@@ -19,3 +19,21 @@ Whether you're just getting started with TAMS or you're a seasoned pro, this is 
 [Register here for the Zoom call details](https://amazon.zoom.us/webinar/register/WN_vtwfeKCWQoiGt943Zx5dVA#/registration)
 
 ---
+
+# TAMS Community Call!
+
+### Wednesday, June 3rd at 4pm BST
+
+Join us for the next TAMS Community Call - the regular gathering for our growing community!
+
+What to expect:
+
+• TAMS Updates - Latest news on events and software releases
+
+• Community Spotlight - Share your TAMS use cases and launches
+
+• Features & Roadmap
+
+• Voice of the Vendor
+
+Whether you're just getting started with TAMS or you're a seasoned pro, this is your chance to connect, learn, and shape the future of our community!

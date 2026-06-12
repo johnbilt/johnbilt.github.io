@@ -5,23 +5,19 @@ subtitle: Upcoming events relating to TAMS
 hero_image: /images/events_background.png
 ---
 
-# TAMS Community Call!
+# Webinar: From Files to Timelines — How TAMS is Rewiring Live Media Workflows
 
-### Wednesday, June 3rd at 4pm BST
+### Tuesday, June 23rd at 3pm UTC
 
-Join us for the next TAMS Community Call - the regular gathering for our growing community!
+Join LucidLink, AWS and Mavis on 23 June at 3pm UTC for a candid conversation on what happens when media becomes time-addressable instead of file-based.
 
-What to expect:
+We'll cover: 
+• What TAMS actually is — and what changes for live/fast-turnaround workflows 
+• Why it matters now for sports, news & live events 
+• The honest trade-offs — complexity, interop conventions & what TAMS doesn't solve 
+• How the ecosystem (NLEs, MAMs, AI tooling) closes the loop
 
-• TAMS Updates - Latest news on events and software releases
+Speakers: Alex Ferris (LucidLink), Chris Swan (AWS), Patrick Holroyd (Mavis)
 
-• Community Spotlight - Share your TAMS use cases and launches
-
-• Features & Roadmap
-
-• Voice of the Vendor
-
-Whether you're just getting started with TAMS or you're a seasoned pro, this is your chance to connect, learn, and shape the future of our community!
-
-[Register here for the Zoom call details](https://amazon.zoom.us/meeting/register/BNeX_rzTQs6N7d8JZ1TD0w)
+[Register here](https://www.lucidlink.com/events/unlocked-from-files-to-timelines)
 
