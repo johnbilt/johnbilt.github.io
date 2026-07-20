@@ -37,7 +37,7 @@ cards:
       **Example:** A 1080p50 H.264 video flow, a 48kHz PCM audio flow, and a multi-essence flow collecting them together.
 
   - title: Time Ranges
-    icon: fa-clock
+    icon: fa-arrows-alt-h
     summary: The temporal boundaries that define when content exists on a Flow's timeline, expressed as start and end points.
     detail: |
       A **Time Range** defines a span of time on a Flow's timeline. It is the fundamental mechanism for addressing media by time in TAMS.
@@ -99,8 +99,25 @@ cards:
       - Media deletion is managed through the API; removing Segments and Flows triggers cleanup of unused Objects
 
       **Example:** A bucket holding thousands of media chunks, with the TAMS API managing all access control and lifecycle.
+
+  - title: Tags
+    icon: fa-tag
+    summary: Key-value metadata attached to Sources and Flows for discovery, filtering and workflow automation.
+    detail: |
+      **Tags** are key-value pairs attached to Sources and Flows that enable content discovery, filtering and workflow automation.
+
+      **Key points:**
+      - Tags are applied at both the Source and Flow level
+      - They use a simple key-value structure (e.g. `genre: news`, `location: studio-a`)
+      - Tags on a Source describe the content editorially (what it is about)
+      - Tags on a Flow can describe technical or workflow state (e.g. `status: approved`, `resolution: uhd`)
+      - When a Source is auto-created from a Flow, the store may copy the Flow's tags to the Source
+      - Tags are searchable — you can query the store to find all Sources or Flows matching specific tags
+      - Tags enable automation: downstream systems can watch for specific tag values to trigger workflows
+
+      **Example:** A Source tagged with `sport: football` and `event: world-cup-2026`, and its Flow tagged with `status: ready-for-edit` and `proxy: true`.
 ---
 
 ## Key TAMS Concepts
 
-The TAMS data model is built around six key concepts. Click any card below to learn more about how each element works and how they relate to each other.
+The TAMS data model is built around seven key concepts. Click any card below to learn more about how each element works and how they relate to each other.

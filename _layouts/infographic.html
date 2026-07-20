@@ -12,12 +12,14 @@ layout: default
   <div class="column is-4-desktop is-half-tablet">
     <div class="infographic-card" data-card="{{ forloop.index }}">
       <div class="infographic-card-icon">
-        <span class="icon is-large">
-          <i class="fas {{ card.icon }} fa-3x"></i>
+        <span class="icon">
+          <i class="fas {{ card.icon }} fa-2x"></i>
         </span>
       </div>
-      <h3 class="infographic-card-title">{{ card.title }}</h3>
-      <p class="infographic-card-summary">{{ card.summary }}</p>
+      <div class="infographic-card-body">
+        <h3 class="infographic-card-title">{{ card.title }}</h3>
+        <p class="infographic-card-summary">{{ card.summary }}</p>
+      </div>
     </div>
   </div>
   {% endfor %}
@@ -48,14 +50,14 @@ layout: default
     background: #fff;
     border: 2px solid #e8e8e8;
     border-radius: 8px;
-    padding: 1.5rem 1rem;
-    text-align: center;
+    padding: 0.75rem 1rem;
     cursor: pointer;
     transition: all 0.2s ease;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    gap: 0.75rem;
   }
   .infographic-card:hover {
     border-color: #003e80;
@@ -68,18 +70,24 @@ layout: default
   }
   .infographic-card-icon {
     color: #003e80;
-    margin-bottom: 1rem;
+    flex-shrink: 0;
+    width: 2.5rem;
+    text-align: center;
+  }
+  .infographic-card-body {
+    flex: 1;
   }
   .infographic-card-title {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
     color: #333;
   }
   .infographic-card-summary {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #666;
     margin: 0;
+    line-height: 1.4;
   }
   .infographic-detail {
     margin-top: 1.5rem;
