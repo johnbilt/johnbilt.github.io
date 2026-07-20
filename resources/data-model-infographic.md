@@ -1,4 +1,3 @@
-
 ---
 layout: infographic
 title: TAMS Data Model
