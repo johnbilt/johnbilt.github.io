@@ -11,7 +11,7 @@ show_sidebar: false
     display: flex;
     gap: 1.5rem;
     align-items: stretch;
-    min-height: 500px;
+    min-height: 560px;
   }
   @media screen and (max-width: 768px) {
     .dm-container {
@@ -39,153 +39,224 @@ show_sidebar: false
     color: #999;
     font-style: italic;
   }
-
-  /* SVG diagram */
   .dm-diagram svg {
     width: 100%;
     height: 100%;
-    min-height: 500px;
+    min-height: 560px;
   }
   .dm-node {
     cursor: pointer;
+    transition: filter 0.2s ease;
   }
-  .dm-node rect {
-    fill: #fff;
-    stroke: #003e80;
-    stroke-width: 2;
-    rx: 6;
-    ry: 6;
-    transition: all 0.2s ease;
-  }
-  .dm-node:hover rect {
-    fill: #f0f6ff;
-    stroke-width: 3;
+  .dm-node:hover {
+    filter: brightness(0.95);
   }
   .dm-node.is-active rect {
-    fill: #e0edff;
-    stroke-width: 3;
+    stroke-width: 3.5;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.2));
+  }
+  .dm-node rect {
+    stroke-width: 2;
+    rx: 8;
+    ry: 8;
   }
   .dm-node text {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    font-size: 11px;
     fill: #333;
     text-anchor: middle;
     pointer-events: none;
   }
-  .dm-node text.node-type {
-    font-size: 9px;
-    fill: #666;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+  .dm-node text.node-label {
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .dm-node text.node-sublabel {
+    font-size: 9.5px;
+    fill: #555;
+  }
+  .dm-node text.node-icon {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 14px;
+    fill: #fff;
   }
   .dm-link {
-    stroke: #003e80;
-    stroke-width: 1.5;
     fill: none;
-    opacity: 0.4;
+    stroke-width: 1.5;
+    opacity: 0.5;
   }
-  .dm-link.collection-link {
-    stroke-dasharray: 4,3;
-    stroke: #e67e22;
+  .dm-link.belongs {
+    stroke: #555;
+  }
+  .dm-link.collection {
+    stroke: #003e80;
+    stroke-dasharray: 5,3;
     opacity: 0.6;
   }
 </style>
 
 <div class="dm-container">
   <div class="dm-diagram">
-    <svg viewBox="0 0 700 520" preserveAspectRatio="xMidYMid meet">
-      <!-- Links: Source hierarchy (multi-source to mono sources) -->
-      <line class="dm-link collection-link" x1="350" y1="70" x2="150" y2="150"/>
-      <line class="dm-link collection-link" x1="350" y1="70" x2="300" y2="150"/>
-      <line class="dm-link collection-link" x1="350" y1="70" x2="450" y2="150"/>
-      <line class="dm-link collection-link" x1="350" y1="70" x2="600" y2="150"/>
+    <svg viewBox="0 0 820 560" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+          <path d="M0,0 L8,3 L0,6 Z" fill="#555" opacity="0.5"/>
+        </marker>
+        <marker id="arrow-blue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+          <path d="M0,0 L8,3 L0,6 Z" fill="#003e80" opacity="0.6"/>
+        </marker>
+      </defs>
 
-      <!-- Links: Multi-source to Multi-flow -->
-      <line class="dm-link" x1="350" y1="90" x2="350" y2="230"/>
+      <!-- === LINKS === -->
 
-      <!-- Links: Multi-flow to mono flows (collection) -->
-      <line class="dm-link collection-link" x1="350" y1="280" x2="100" y2="360"/>
-      <line class="dm-link collection-link" x1="350" y1="280" x2="250" y2="360"/>
-      <line class="dm-link collection-link" x1="350" y1="280" x2="400" y2="360"/>
-      <line class="dm-link collection-link" x1="350" y1="280" x2="525" y2="360"/>
-      <line class="dm-link collection-link" x1="350" y1="280" x2="650" y2="360"/>
+      <!-- Multi-Source to mono Sources (collection - dashed) -->
+      <path class="dm-link collection" d="M410,85 C410,105 155,110 155,135" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,85 C410,105 345,110 345,135" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,85 C410,105 530,110 530,135" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,85 C410,105 700,110 700,135" marker-end="url(#arrow-blue)"/>
 
-      <!-- Links: Mono sources to mono flows -->
-      <line class="dm-link" x1="150" y1="180" x2="100" y2="360"/>
-      <line class="dm-link" x1="150" y1="180" x2="250" y2="360"/>
-      <line class="dm-link" x1="300" y1="180" x2="400" y2="360"/>
-      <line class="dm-link" x1="600" y1="180" x2="525" y2="360"/>
-      <line class="dm-link" x1="450" y1="180" x2="650" y2="360"/>
+      <!-- Multi-Source to Multi-Flow (belongs) -->
+      <line class="dm-link belongs" x1="410" y1="85" x2="410" y2="265" marker-end="url(#arrow)"/>
 
-      <!-- Row 1: Multi-essence Source -->
+      <!-- Multi-Flow to mono Flows (collection - dashed) -->
+      <path class="dm-link collection" d="M410,310 C410,340 120,345 120,375" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,310 C410,340 150,350 150,400" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,310 C410,340 350,345 350,380" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,310 C410,340 530,345 530,380" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,310 C410,340 710,345 710,380" marker-end="url(#arrow-blue)"/>
+
+      <!-- Mono Sources to their Flows (belongs - solid) -->
+      <line class="dm-link belongs" x1="155" y1="185" x2="120" y2="375" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="155" y1="185" x2="150" y2="400" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="345" y1="185" x2="350" y2="380" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="530" y1="185" x2="530" y2="380" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="700" y1="185" x2="710" y2="380" marker-end="url(#arrow)"/>
+
+      <!-- === ROW 1: Multi-Essence Source === -->
       <g class="dm-node" data-node="multi-source">
-        <rect x="275" y="30" width="150" height="60"/>
-        <text class="node-type" x="350" y="50">Multi Source</text>
-        <text x="350" y="70">"Election Night"</text>
+        <rect x="325" y="30" width="170" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="360" cy="57" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="360" y="62">&#xf0e8;</text>
+        <text class="node-label" x="435" y="54">Election Night</text>
+        <text class="node-sublabel" x="435" y="68">Multi-Essence Source</text>
       </g>
 
-      <!-- Row 2: Mono Sources -->
+      <!-- === ROW 2: Mono Sources === -->
       <g class="dm-node" data-node="video-source">
-        <rect x="80" y="130" width="140" height="60"/>
-        <text class="node-type" x="150" y="150">Video Source</text>
-        <text x="150" y="170">Video</text>
+        <rect x="80" y="130" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="115" cy="157" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="115" y="162">&#xf03d;</text>
+        <text class="node-label" x="180" y="154">Video</text>
+        <text class="node-sublabel" x="180" y="168">Source</text>
       </g>
       <g class="dm-node" data-node="audio-source">
-        <rect x="230" y="130" width="140" height="60"/>
-        <text class="node-type" x="300" y="150">Audio Source</text>
-        <text x="300" y="170">Audio</text>
-      </g>
-      <g class="dm-node" data-node="data-source">
-        <rect x="380" y="130" width="140" height="60"/>
-        <text class="node-type" x="450" y="150">Data Source</text>
-        <text x="450" y="170">Subtitles</text>
+        <rect x="270" y="130" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="305" cy="157" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="305" y="162">&#xf130;</text>
+        <text class="node-label" x="370" y="154">Audio</text>
+        <text class="node-sublabel" x="370" y="168">Source</text>
       </g>
       <g class="dm-node" data-node="image-source">
-        <rect x="530" y="130" width="140" height="60"/>
-        <text class="node-type" x="600" y="150">Image Source</text>
-        <text x="600" y="170">Thumbnails</text>
+        <rect x="455" y="130" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="490" cy="157" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="490" y="162">&#xf03e;</text>
+        <text class="node-label" x="555" y="154">Thumbnails</text>
+        <text class="node-sublabel" x="555" y="168">Image Source</text>
+      </g>
+      <g class="dm-node" data-node="data-source">
+        <rect x="625" y="130" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="660" cy="157" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="660" y="162">&#xf1ea;</text>
+        <text class="node-label" x="725" y="154">Subtitles</text>
+        <text class="node-sublabel" x="725" y="168">Data Source</text>
       </g>
 
-      <!-- Row 3: Multi-essence Flow -->
+      <!-- === ROW 3: Multi-Essence Flow === -->
       <g class="dm-node" data-node="multi-flow">
-        <rect x="275" y="240" width="150" height="60"/>
-        <text class="node-type" x="350" y="260">Multi Flow</text>
-        <text x="350" y="280">Programme</text>
+        <rect x="325" y="260" width="170" height="55" fill="#fef3e8" stroke="#e67e22"/>
+        <circle cx="360" cy="287" r="14" fill="#e67e22"/>
+        <text class="node-icon" x="360" y="292">&#xf0e8;</text>
+        <text class="node-label" x="435" y="284">Programme</text>
+        <text class="node-sublabel" x="435" y="298">Multi-Essence Flow</text>
       </g>
 
-      <!-- Row 4: Mono Flows -->
-      <g class="dm-node" data-node="video-flow-hires">
-        <rect x="30" y="350" width="140" height="60"/>
-        <text class="node-type" x="100" y="370">Video Flow</text>
-        <text x="100" y="390">1080p50 H.264</text>
-      </g>
+      <!-- === ROW 4: Mono Flows === -->
+      <!-- Video Flows - stacked/overlapping to show they're a set -->
       <g class="dm-node" data-node="video-flow-proxy">
-        <rect x="180" y="350" width="140" height="60"/>
-        <text class="node-type" x="250" y="370">Video Flow</text>
-        <text x="250" y="390">720p Proxy</text>
+        <rect x="75" y="400" width="150" height="55" fill="#fef3e8" stroke="#e67e22"/>
+        <circle cx="110" cy="427" r="14" fill="#e67e22"/>
+        <text class="node-icon" x="110" y="432">&#xf03d;</text>
+        <text class="node-label" x="175" y="420">720p Proxy</text>
+        <text class="node-sublabel" x="175" y="434">Video Flow</text>
+      </g>
+      <g class="dm-node" data-node="video-flow-hires">
+        <rect x="45" y="375" width="150" height="55" fill="#fef3e8" stroke="#e67e22"/>
+        <circle cx="80" cy="402" r="14" fill="#e67e22"/>
+        <text class="node-icon" x="80" y="407">&#xf03d;</text>
+        <text class="node-label" x="145" y="395">1080p50 H.264</text>
+        <text class="node-sublabel" x="145" y="409">Video Flow</text>
       </g>
       <g class="dm-node" data-node="audio-flow">
-        <rect x="330" y="350" width="140" height="60"/>
-        <text class="node-type" x="400" y="370">Audio Flow</text>
-        <text x="400" y="390">48kHz PCM</text>
+        <rect x="280" y="380" width="140" height="55" fill="#fef3e8" stroke="#e67e22"/>
+        <circle cx="315" cy="407" r="14" fill="#e67e22"/>
+        <text class="node-icon" x="315" y="412">&#xf130;</text>
+        <text class="node-label" x="375" y="400">48kHz PCM</text>
+        <text class="node-sublabel" x="375" y="414">Audio Flow</text>
       </g>
       <g class="dm-node" data-node="image-flow">
-        <rect x="480" y="350" width="130" height="60"/>
-        <text class="node-type" x="545" y="370">Image Flow</text>
-        <text x="545" y="390">Thumbnails</text>
+        <rect x="460" y="380" width="140" height="55" fill="#fef3e8" stroke="#e67e22"/>
+        <circle cx="495" cy="407" r="14" fill="#e67e22"/>
+        <text class="node-icon" x="495" y="412">&#xf03e;</text>
+        <text class="node-label" x="555" y="400">Thumbnails</text>
+        <text class="node-sublabel" x="555" y="414">Image Flow</text>
       </g>
       <g class="dm-node" data-node="data-flow">
-        <rect x="585" y="350" width="110" height="60"/>
-        <text class="node-type" x="640" y="370">Data Flow</text>
-        <text x="640" y="390">Subtitles</text>
+        <rect x="640" y="380" width="140" height="55" fill="#fef3e8" stroke="#e67e22"/>
+        <circle cx="675" cy="407" r="14" fill="#e67e22"/>
+        <text class="node-icon" x="675" y="412">&#xf1ea;</text>
+        <text class="node-label" x="735" y="400">Subtitles</text>
+        <text class="node-sublabel" x="735" y="414">Data Flow</text>
       </g>
 
-      <!-- Legend -->
-      <g transform="translate(20, 460)">
-        <line x1="0" y1="8" x2="30" y2="8" stroke="#003e80" stroke-width="1.5" opacity="0.4"/>
-        <text x="35" y="12" font-size="10" fill="#666" font-family="sans-serif">Belongs to (Source → Flow)</text>
-        <line x1="250" y1="8" x2="280" y2="8" stroke="#e67e22" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
-        <text x="285" y="12" font-size="10" fill="#666" font-family="sans-serif">Collection (Multi collects Mono)</text>
+      <!-- === LEGEND === -->
+      <g transform="translate(30, 475)">
+        <text font-size="10" font-weight="600" fill="#333" font-family="sans-serif">Legend:</text>
+
+        <line x1="0" y1="22" x2="35" y2="22" stroke="#555" stroke-width="1.5" opacity="0.5"/>
+        <polygon points="35,19 41,22 35,25" fill="#555" opacity="0.5"/>
+        <text x="48" y="26" font-size="10" fill="#666" font-family="sans-serif">Belongs to</text>
+
+        <line x1="170" y1="22" x2="205" y2="22" stroke="#003e80" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.6"/>
+        <polygon points="205,19 211,22 205,25" fill="#003e80" opacity="0.6"/>
+        <text x="218" y="26" font-size="10" fill="#666" font-family="sans-serif">Collection</text>
+
+        <!-- Colour key -->
+        <rect x="0" y="40" width="14" height="14" rx="3" fill="#e8f4f8" stroke="#0077b6" stroke-width="1.5"/>
+        <text x="20" y="51" font-size="10" fill="#666" font-family="sans-serif">Source</text>
+
+        <rect x="80" y="40" width="14" height="14" rx="3" fill="#fef3e8" stroke="#e67e22" stroke-width="1.5"/>
+        <text x="100" y="51" font-size="10" fill="#666" font-family="sans-serif">Flow</text>
+
+        <!-- Icon key -->
+        <circle cx="187" cy="47" r="8" fill="#666"/>
+        <text x="187" y="51" font-family="Font Awesome 5 Free" font-weight="900" font-size="8" fill="#fff" text-anchor="middle">&#xf03d;</text>
+        <text x="200" y="51" font-size="10" fill="#666" font-family="sans-serif">Video</text>
+
+        <circle cx="262" cy="47" r="8" fill="#666"/>
+        <text x="262" y="51" font-family="Font Awesome 5 Free" font-weight="900" font-size="8" fill="#fff" text-anchor="middle">&#xf130;</text>
+        <text x="275" y="51" font-size="10" fill="#666" font-family="sans-serif">Audio</text>
+
+        <circle cx="337" cy="47" r="8" fill="#666"/>
+        <text x="337" y="51" font-family="Font Awesome 5 Free" font-weight="900" font-size="8" fill="#fff" text-anchor="middle">&#xf03e;</text>
+        <text x="350" y="51" font-size="10" fill="#666" font-family="sans-serif">Image</text>
+
+        <circle cx="407" cy="47" r="8" fill="#666"/>
+        <text x="407" y="51" font-family="Font Awesome 5 Free" font-weight="900" font-size="8" fill="#fff" text-anchor="middle">&#xf1ea;</text>
+        <text x="420" y="51" font-size="10" fill="#666" font-family="sans-serif">Data</text>
+
+        <circle cx="472" cy="47" r="8" fill="#666"/>
+        <text x="472" y="51" font-family="Font Awesome 5 Free" font-weight="900" font-size="8" fill="#fff" text-anchor="middle">&#xf0e8;</text>
+        <text x="485" y="51" font-size="10" fill="#666" font-family="sans-serif">Multi</text>
       </g>
     </svg>
   </div>
@@ -211,12 +282,12 @@ show_sidebar: false
       content: '<p>The <strong>Audio Source</strong> represents all audio renditions of this content.</p><p><strong>Key points:</strong></p><ul><li>Could have multiple Flows (e.g. PCM and AAC, or different language tracks)</li><li>Collected by the Multi-Essence Source</li><li>Separate from video — enabling independent audio workflows</li></ul>'
     },
     'data-source': {
-      title: 'Data Source',
+      title: 'Data Source — Subtitles',
       content: '<p>The <strong>Data Source</strong> represents non-media data associated with this content — in this example, subtitles.</p><p><strong>Key points:</strong></p><ul><li>Data Sources handle any non-audio/video essence: subtitles, closed captions, ancillary data</li><li>Collected by the Multi-Essence Source alongside video and audio</li><li>Flows under this Source hold the format details (e.g. WebVTT, TTML)</li></ul>'
     },
     'image-source': {
-      title: 'Image Source',
-      content: '<p>The <strong>Image Source</strong> represents still image content — in this example, thumbnail images for preview/navigation.</p><p><strong>Key points:</strong></p><ul><li>Used for poster frames, thumbnails, sprite sheets</li><li>Collected by the Multi-Essence Source</li><li>Flows specify image format and resolution</li><li>Segments use instantaneous timeranges (single timestamp rather than a range)</li></ul>'
+      title: 'Image Source — Thumbnails',
+      content: '<p>The <strong>Image Source</strong> represents still image content — in this example, thumbnail images for preview and navigation.</p><p><strong>Key points:</strong></p><ul><li>Used for poster frames, thumbnails, sprite sheets</li><li>Collected by the Multi-Essence Source</li><li>Flows specify image format and resolution</li><li>Segments use instantaneous timeranges (single timestamp rather than a range)</li></ul>'
     },
     'multi-flow': {
       title: 'Multi-Essence Flow',
@@ -224,7 +295,7 @@ show_sidebar: false
     },
     'video-flow-hires': {
       title: 'Video Flow — High Resolution',
-      content: '<p>The <strong>1080p50 H.264 Video Flow</strong> is the full-quality video rendition.</p><p><strong>Key points:</strong></p><ul><li>Belongs to the Video Source</li><li>Collected by the Multi-Essence Flow</li><li>Carries technical parameters: codec (H.264), resolution (1920x1080), frame rate (50fps)</li><li>Has its own timeline where video Segments are registered</li><li>Used for transmission, rendering, and final output</li></ul>'
+      content: '<p>The <strong>1080p50 H.264 Video Flow</strong> is the full-quality video rendition.</p><p><strong>Key points:</strong></p><ul><li>Belongs to the Video Source</li><li>Collected by the Multi-Essence Flow</li><li>Carries technical parameters: codec (H.264), resolution (1920×1080), frame rate (50fps)</li><li>Has its own timeline where video Segments are registered</li><li>Used for transmission, rendering, and final output</li></ul>'
     },
     'video-flow-proxy': {
       title: 'Video Flow — Proxy',
