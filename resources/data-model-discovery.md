@@ -42,7 +42,7 @@ show_sidebar: false
   .dm-diagram svg {
     width: 100%;
     height: 100%;
-    min-height: 580px;
+    min-height: 560px;
   }
   .dm-node {
     cursor: pointer;
@@ -97,7 +97,7 @@ show_sidebar: false
 
 <div class="dm-container">
   <div class="dm-diagram">
-    <svg viewBox="0 0 820 580" preserveAspectRatio="xMidYMid meet">
+    <svg viewBox="0 0 820 560" preserveAspectRatio="xMidYMid meet">
       <defs>
         <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
           <path d="M0,0 L8,3 L0,6 Z" fill="#555" opacity="0.5"/>
@@ -110,27 +110,27 @@ show_sidebar: false
       <!-- === LINKS === -->
 
       <!-- Multi-Source to mono Sources (collection - dashed) -->
-      <path class="dm-link collection" d="M410,85 C410,135 155,140 155,185" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,85 C410,135 345,140 345,185" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,85 C410,135 530,140 530,185" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,85 C410,135 700,140 700,185" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,85 C410,125 155,130 155,165" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,85 C410,125 345,130 345,165" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,85 C410,125 530,130 530,165" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,85 C410,125 700,130 700,165" marker-end="url(#arrow-blue)"/>
 
       <!-- Multi-Source to Multi-Flow (belongs) -->
-      <line class="dm-link belongs" x1="410" y1="85" x2="410" y2="280" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="410" y1="85" x2="410" y2="260" marker-end="url(#arrow)"/>
 
       <!-- Multi-Flow to mono Flows (collection - dashed) -->
-      <path class="dm-link collection" d="M410,335 C410,365 120,370 120,395" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,335 C410,365 150,375 150,420" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,335 C410,365 350,370 350,400" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,335 C410,365 530,370 530,400" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,335 C410,365 710,370 710,400" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,315 C410,355 120,360 120,395" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,315 C410,355 150,365 150,420" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,315 C410,355 350,360 350,400" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,315 C410,355 530,360 530,400" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,315 C410,355 710,360 710,400" marker-end="url(#arrow-blue)"/>
 
       <!-- Mono Sources to their Flows (belongs - solid) -->
-      <line class="dm-link belongs" x1="155" y1="240" x2="120" y2="395" marker-end="url(#arrow)"/>
-      <line class="dm-link belongs" x1="155" y1="240" x2="150" y2="420" marker-end="url(#arrow)"/>
-      <line class="dm-link belongs" x1="345" y1="240" x2="350" y2="400" marker-end="url(#arrow)"/>
-      <line class="dm-link belongs" x1="530" y1="240" x2="530" y2="400" marker-end="url(#arrow)"/>
-      <line class="dm-link belongs" x1="700" y1="240" x2="710" y2="400" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="155" y1="220" x2="120" y2="395" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="155" y1="220" x2="150" y2="420" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="345" y1="220" x2="350" y2="400" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="530" y1="220" x2="530" y2="400" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="700" y1="220" x2="710" y2="400" marker-end="url(#arrow)"/>
 
       <!-- === ROW 1: Multi-Essence Source === -->
       <g class="dm-node" data-node="multi-source">
@@ -143,45 +143,44 @@ show_sidebar: false
 
       <!-- === ROW 2: Mono Sources === -->
       <g class="dm-node" data-node="video-source">
-        <rect x="80" y="185" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
-        <circle cx="115" cy="212" r="14" fill="#0077b6"/>
-        <text class="node-icon" x="115" y="217">&#xf03d;</text>
-        <text class="node-label" x="180" y="209">Video</text>
-        <text class="node-sublabel" x="180" y="223">Source</text>
+        <rect x="80" y="165" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="115" cy="192" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="115" y="197">&#xf03d;</text>
+        <text class="node-label" x="180" y="189">Video</text>
+        <text class="node-sublabel" x="180" y="203">Source</text>
       </g>
       <g class="dm-node" data-node="audio-source">
-        <rect x="270" y="185" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
-        <circle cx="305" cy="212" r="14" fill="#0077b6"/>
-        <text class="node-icon" x="305" y="217">&#xf130;</text>
-        <text class="node-label" x="370" y="209">Audio</text>
-        <text class="node-sublabel" x="370" y="223">Source</text>
+        <rect x="270" y="165" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="305" cy="192" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="305" y="197">&#xf130;</text>
+        <text class="node-label" x="370" y="189">Audio</text>
+        <text class="node-sublabel" x="370" y="203">Source</text>
       </g>
       <g class="dm-node" data-node="image-source">
-        <rect x="455" y="185" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
-        <circle cx="490" cy="212" r="14" fill="#0077b6"/>
-        <text class="node-icon" x="490" y="217">&#xf03e;</text>
-        <text class="node-label" x="555" y="209">Thumbnails</text>
-        <text class="node-sublabel" x="555" y="223">Image Source</text>
+        <rect x="455" y="165" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="490" cy="192" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="490" y="197">&#xf03e;</text>
+        <text class="node-label" x="555" y="189">Thumbnails</text>
+        <text class="node-sublabel" x="555" y="203">Image Source</text>
       </g>
       <g class="dm-node" data-node="data-source">
-        <rect x="625" y="185" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
-        <circle cx="660" cy="212" r="14" fill="#0077b6"/>
-        <text class="node-icon" x="660" y="217">&#xf1ea;</text>
-        <text class="node-label" x="725" y="209">Subtitles</text>
-        <text class="node-sublabel" x="725" y="223">Data Source</text>
+        <rect x="625" y="165" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="660" cy="192" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="660" y="197">&#xf1ea;</text>
+        <text class="node-label" x="725" y="189">Subtitles</text>
+        <text class="node-sublabel" x="725" y="203">Data Source</text>
       </g>
 
       <!-- === ROW 3: Multi-Essence Flow === -->
       <g class="dm-node" data-node="multi-flow">
-        <rect x="325" y="280" width="170" height="55" fill="#fef3e8" stroke="#e67e22"/>
-        <circle cx="360" cy="307" r="14" fill="#e67e22"/>
-        <text class="node-icon" x="360" y="312">&#xf0e8;</text>
-        <text class="node-label" x="435" y="304">Programme</text>
-        <text class="node-sublabel" x="435" y="318">Multi-Essence Flow</text>
+        <rect x="325" y="260" width="170" height="55" fill="#fef3e8" stroke="#e67e22"/>
+        <circle cx="360" cy="287" r="14" fill="#e67e22"/>
+        <text class="node-icon" x="360" y="292">&#xf0e8;</text>
+        <text class="node-label" x="435" y="284">Programme</text>
+        <text class="node-sublabel" x="435" y="298">Multi-Essence Flow</text>
       </g>
 
       <!-- === ROW 4: Mono Flows === -->
-      <!-- Video Flows - stacked/overlapping to show they're a set -->
       <g class="dm-node" data-node="video-flow-proxy">
         <rect x="75" y="420" width="150" height="55" fill="#fef3e8" stroke="#e67e22"/>
         <circle cx="110" cy="447" r="14" fill="#e67e22"/>
@@ -219,7 +218,7 @@ show_sidebar: false
       </g>
 
       <!-- === LEGEND === -->
-      <g transform="translate(30, 510)">
+      <g transform="translate(30, 490)">
         <text font-size="10" font-weight="600" fill="#333" font-family="sans-serif">Legend:</text>
 
         <line x1="60" y1="0" x2="95" y2="0" stroke="#555" stroke-width="1.5" opacity="0.5"/>
@@ -249,11 +248,11 @@ show_sidebar: false
   var descriptions = {
     'multi-source': {
       title: 'Multi-Essence Source',
-      content: '<p>The <strong>Multi-Essence Source</strong> represents the complete piece of content as a user would understand it — in this case "Election Night Coverage". It is the primary point of discovery for content in TAMS.</p><p>It collects together the individual mono-essence Sources (video, audio, data, images) into a single discoverable entity. This "muxed" version is what users are typically aware of and what they search for.</p><p><strong>Key points:</strong></p><ul><li>This is what a user searches for in a MAM or browse tool — the primary discovery mechanism for content</li><li>Created automatically when a Multi-Essence Flow is created — Sources cannot be created directly via the API</li><li>Carries editorial metadata: a <strong>label</strong> (short-form human-readable identifier) and <strong>description</strong> (additional context to help locate and identify content), plus tags</li><li>The collection links to mono-essence Sources are managed automatically by the store, inferred from the Flow collections beneath</li><li>Media workflows and applications should use Sources as their references to media (e.g. a MAM might reference an asset using the ID of a Source, in lieu of a file name)</li><li>Business logic is then applied to identify a suitable Flow representing that Source when operations need to be performed — for example, choosing between proxy-quality for an offline edit and full-quality for a render</li><li>The data model deliberately does not contain a rich editorial metadata model — for complex metadata, use a MAM layer on top of TAMS</li></ul>'
+      content: '<p>The <strong>Multi-Essence Source</strong> represents the complete piece of content as a user would understand it — in this case "Election Night Coverage". It is the primary point of discovery for content in TAMS.</p><p><strong>Key points:</strong></p><ul><li>This is what a user searches for in a MAM or browse tool — the primary discovery mechanism for content</li><li>Collects mono-essence Sources (video, audio, data, images) into a single discoverable entity</li><li>Created automatically when a Multi-Essence Flow is created — collection links are managed by the store</li><li>Carries editorial metadata: a <strong>label</strong>, <strong>description</strong>, and tags</li><li>Workflows should reference Sources by ID (in lieu of file names) — business logic then selects the appropriate Flow for the task at hand</li></ul>'
     },
     'video-source': {
       title: 'Video Source',
-      content: '<p>The <strong>Video Source</strong> represents all video renditions of this content, regardless of resolution or codec. It identifies <em>what</em> the video content is, not how it is stored or encoded.</p><p><strong>Key points:</strong></p><ul><li>Multiple Flows can belong to this Source (e.g. 1080p50 high-res and 720p proxy) — the content must be editorially identical, just with different technical characteristics</li><li>Created automatically when the first video Flow referencing it is created — the store replicates the Flow\'s label and description to the Source initially</li><li>Collected by the Multi-Essence Source above — the store manages this collection link automatically</li><li>Business logic selects the appropriate Flow for the task at hand (e.g. proxy for offline editing, full-quality for rendering or transmission)</li><li>Identified by UUID — systems reference this ID rather than file names</li></ul>'
+      content: '<p>The <strong>Video Source</strong> represents all video renditions of this content, regardless of resolution or codec.</p><p><strong>Key points:</strong></p><ul><li>Multiple Flows can belong to this Source (e.g. 1080p50 high-res and 720p proxy) — editorially identical, different technical characteristics</li><li>Created automatically when the first video Flow referencing it is created</li><li>Collected by the Multi-Essence Source — the store manages this link automatically</li><li>Business logic selects the appropriate Flow for the task (e.g. proxy for editing, full-quality for rendering)</li><li>Identified by UUID — systems reference this ID rather than file names</li></ul>'
     },
     'audio-source': {
       title: 'Audio Source',
@@ -265,19 +264,19 @@ show_sidebar: false
     },
     'image-source': {
       title: 'Image Source — Thumbnails',
-      content: '<p>The <strong>Image Source</strong> represents still image content — in this example, thumbnail images for preview and navigation.</p><p><strong>Key points:</strong></p><ul><li>Used for poster frames, thumbnails, sprite sheets, and keyframe images</li><li>Collected by the Multi-Essence Source alongside video, audio, and data</li><li>Flows specify image format (e.g. JPEG) and resolution</li><li>Segments use instantaneous timeranges — a single inclusive timestamp (e.g. <code>[1694429247:0]</code>) rather than a start-end range — to mark the point on the timeline the image represents</li><li>Uses the format URN <code>urn:x-tam:format:image</code></li></ul>'
+      content: '<p>The <strong>Image Source</strong> represents still image content — in this example, thumbnail images for preview and navigation.</p><p><strong>Key points:</strong></p><ul><li>Used for poster frames, thumbnails, sprite sheets, and keyframe images</li><li>Collected by the Multi-Essence Source alongside video, audio, and data</li><li>Flows specify image format (e.g. JPEG) and resolution</li><li>Segments use instantaneous timeranges — a single inclusive timestamp (e.g. <code>[1694429247:0]</code>) rather than a start-end range</li><li>Uses the format URN <code>urn:x-tam:format:image</code></li></ul>'
     },
     'multi-flow': {
       title: 'Multi-Essence Flow',
-      content: '<p>The <strong>Multi-Essence Flow</strong> collects the individual mono-essence Flows together into a single "programme" representation. It is the element that ties video, audio, data, and image Flows into a coherent whole.</p><p><strong>Key points:</strong></p><ul><li>Has no media stored directly against it — no Segments are registered to a Multi-Essence Flow</li><li>Collects mono-essence Flows with defined roles (e.g. "video", "audio") via a collection element that includes the IDs and roles of all collected Flows</li><li>Creating this Flow triggers automatic creation of the Multi-Essence Source — the store resolves the links to the relevant Sources and creates the corresponding Source collection links</li><li>All mono-essence Flows to be collected must exist in the store <em>before</em> creating the Multi-Essence Flow collection</li><li>If new Flows are added to an existing Multi-Flow, the store ripples the collections up from the Flow to Source level automatically</li><li>Represents the complete rendition a playout system or downstream workflow would consume</li><li>For mono-essence workflows, this is represented using Flow collections; for muxed media, segments can be registered directly to the Multi-Essence Flow</li></ul>'
+      content: '<p>The <strong>Multi-Essence Flow</strong> collects mono-essence Flows together into a single "programme" representation.</p><p><strong>Key points:</strong></p><ul><li>Has no media stored directly against it — no Segments are registered here</li><li>Collects mono-essence Flows with defined roles (e.g. "video", "audio") via a collection element</li><li>Creating this Flow triggers automatic creation of the Multi-Essence Source and its collection links</li><li>All mono-essence Flows must exist <em>before</em> creating the collection</li><li>Represents the complete rendition a playout system or downstream workflow would consume</li></ul>'
     },
     'video-flow-hires': {
       title: 'Video Flow — High Resolution',
-      content: '<p>The <strong>1080p50 H.264 Video Flow</strong> is the full-quality video rendition, suitable for transmission, rendering, and final output.</p><p><strong>Key points:</strong></p><ul><li>Belongs to the Video Source — linked via the Source ID specified at creation time</li><li>Collected by the Multi-Essence Flow as part of the programme</li><li>Carries technical parameters: codec (H.264), resolution (1920×1080), frame rate (50fps), container/wrapper, bit rate</li><li>Has its own virtual, infinite timeline where video Segments are registered</li><li>Segments should be short, independently decodable chunks — for Long GOP codecs, segments should contain complete GOPs</li><li>Used for transmission, rendering, and final output workflows</li><li>The API is format-agnostic: you can specify codec, container, bit rate, frame rate, bit depth and other parameters when creating the Flow</li></ul>'
+      content: '<p>The <strong>1080p50 H.264 Video Flow</strong> is the full-quality video rendition, suitable for transmission, rendering, and final output.</p><p><strong>Key points:</strong></p><ul><li>Belongs to the Video Source — linked via Source ID at creation time</li><li>Collected by the Multi-Essence Flow as part of the programme</li><li>Carries technical parameters: codec (H.264), resolution (1920×1080), frame rate (50fps), container, bit rate</li><li>Has its own virtual, infinite timeline where video Segments are registered</li><li>Segments should be short, independently decodable chunks — for Long GOP codecs, complete GOPs</li></ul>'
     },
     'video-flow-proxy': {
       title: 'Video Flow — Proxy',
-      content: '<p>The <strong>720p Proxy Video Flow</strong> is a lightweight rendition for editing and review workflows.</p><p><strong>Key points:</strong></p><ul><li>Belongs to the same Video Source as the high-res Flow — the content is editorially identical, just with different technical characteristics</li><li>Also collected by the Multi-Essence Flow</li><li>Lower resolution and bit rate for fast editorial workflows — enabling quick browsing, rough cuts, and review</li><li>Timeline is aligned with the high-res Flow — the same time ranges map to the same editorial content</li><li>Edit decisions made on proxy can be conformed to high-res by switching the Flow reference — no media re-processing required for the edit decision itself</li><li>Business logic in the workflow selects this Flow for offline editing tasks, and the high-res Flow for final render</li></ul>'
+      content: '<p>The <strong>720p Proxy Video Flow</strong> is a lightweight rendition for editing and review workflows.</p><p><strong>Key points:</strong></p><ul><li>Belongs to the same Video Source as the high-res Flow — editorially identical, different technical characteristics</li><li>Also collected by the Multi-Essence Flow</li><li>Lower resolution and bit rate for fast editorial workflows — browsing, rough cuts, and review</li><li>Timeline is aligned with the high-res Flow — same time ranges map to the same content</li><li>Edit decisions made on proxy can be conformed to high-res by switching the Flow reference</li></ul>'
     },
     'audio-flow': {
       title: 'Audio Flow',
@@ -285,11 +284,11 @@ show_sidebar: false
     },
     'image-flow': {
       title: 'Image Flow — Thumbnails',
-      content: '<p>The <strong>Thumbnail Image Flow</strong> provides preview images at points along the timeline, enabling visual navigation of the content.</p><p><strong>Key points:</strong></p><ul><li>Belongs to the Image Source</li><li>Collected by the Multi-Essence Flow as part of the programme</li><li>Segments use instantaneous timeranges (e.g. <code>[1694429247:0]</code>) pointing to individual image Objects — each image marks a specific moment on the timeline</li><li>Used by browse tools, timeline scrubbing UIs, and poster frame selection</li><li>Format parameters specify image codec (e.g. JPEG) and resolution</li><li>Instantaneous TimeRanges use inclusive markers on both ends — exclusive markers cannot be used for instantaneous timestamps</li></ul>'
+      content: '<p>The <strong>Thumbnail Image Flow</strong> provides preview images at points along the timeline, enabling visual navigation of the content.</p><p><strong>Key points:</strong></p><ul><li>Belongs to the Image Source</li><li>Collected by the Multi-Essence Flow as part of the programme</li><li>Segments use instantaneous timeranges (e.g. <code>[1694429247:0]</code>) pointing to individual image Objects</li><li>Used by browse tools, timeline scrubbing UIs, and poster frame selection</li><li>Format parameters specify image codec (e.g. JPEG) and resolution</li></ul>'
     },
     'data-flow': {
       title: 'Data Flow — Subtitles',
-      content: '<p>The <strong>Subtitle Data Flow</strong> holds the subtitle track for this content, stored as time-addressed data segments.</p><p><strong>Key points:</strong></p><ul><li>Belongs to the Data Source</li><li>Collected by the Multi-Essence Flow as part of the programme</li><li>Segments map time ranges to subtitle file Objects (e.g. WebVTT or TTML chunks) — each segment covers a portion of the timeline</li><li>Multiple Data Flows could exist for different languages or subtitle formats under the same Data Source</li><li>Format parameters indicate the subtitle format and container type</li><li>The TAMS Tools UI supports subtitle visualization in the timeline and player</li></ul>'
+      content: '<p>The <strong>Subtitle Data Flow</strong> holds the subtitle track for this content, stored as time-addressed data segments.</p><p><strong>Key points:</strong></p><ul><li>Belongs to the Data Source</li><li>Collected by the Multi-Essence Flow as part of the programme</li><li>Segments map time ranges to subtitle file Objects (e.g. WebVTT or TTML chunks)</li><li>Multiple Data Flows could exist for different languages or subtitle formats</li><li>Format parameters indicate the subtitle format and container type</li></ul>'
     }
   };
 
@@ -321,3 +320,6 @@ show_sidebar: false
 })();
 </script>
 
+```The descriptions are now well-balanced. The `multi-source` is only 56 characters over the target (about one short bullet point's worth), and the `audio-flow` is essentially identical to the target. Everything else is shorter, which is fine — the shorter items (data-flow, image-flow) are naturally simpler concepts that don't need as much explanation.
+
+The updated file is ready with all descriptions trimmed to fit the panel space consistently.
