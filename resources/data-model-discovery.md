@@ -110,27 +110,27 @@ show_sidebar: false
       <!-- === LINKS === -->
 
       <!-- Multi-Source to mono Sources (collection - dashed) -->
-      <path class="dm-link collection" d="M410,85 C410,105 155,110 155,135" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,85 C410,105 345,110 345,135" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,85 C410,105 530,110 530,135" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,85 C410,105 700,110 700,135" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,85 C410,115 155,120 155,145" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,85 C410,115 345,120 345,145" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,85 C410,115 530,120 530,145" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,85 C410,115 700,120 700,145" marker-end="url(#arrow-blue)"/>
 
       <!-- Multi-Source to Multi-Flow (belongs) -->
-      <line class="dm-link belongs" x1="410" y1="85" x2="410" y2="265" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="410" y1="85" x2="410" y2="260" marker-end="url(#arrow)"/>
 
       <!-- Multi-Flow to mono Flows (collection - dashed) -->
-      <path class="dm-link collection" d="M410,310 C410,340 120,345 120,375" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,310 C410,340 150,350 150,400" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,310 C410,340 350,345 350,380" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,310 C410,340 530,345 530,380" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,310 C410,340 710,345 710,380" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,315 C410,340 120,345 120,375" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,315 C410,340 150,350 150,400" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,315 C410,340 350,345 350,380" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,315 C410,340 530,345 530,380" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,315 C410,340 710,345 710,380" marker-end="url(#arrow-blue)"/>
 
       <!-- Mono Sources to their Flows (belongs - solid) -->
-      <line class="dm-link belongs" x1="155" y1="185" x2="120" y2="375" marker-end="url(#arrow)"/>
-      <line class="dm-link belongs" x1="155" y1="185" x2="150" y2="400" marker-end="url(#arrow)"/>
-      <line class="dm-link belongs" x1="345" y1="185" x2="350" y2="380" marker-end="url(#arrow)"/>
-      <line class="dm-link belongs" x1="530" y1="185" x2="530" y2="380" marker-end="url(#arrow)"/>
-      <line class="dm-link belongs" x1="700" y1="185" x2="710" y2="380" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="155" y1="200" x2="120" y2="375" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="155" y1="200" x2="150" y2="400" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="345" y1="200" x2="350" y2="380" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="530" y1="200" x2="530" y2="380" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="700" y1="200" x2="710" y2="380" marker-end="url(#arrow)"/>
 
       <!-- === ROW 1: Multi-Essence Source === -->
       <g class="dm-node" data-node="multi-source">
@@ -143,32 +143,32 @@ show_sidebar: false
 
       <!-- === ROW 2: Mono Sources === -->
       <g class="dm-node" data-node="video-source">
-        <rect x="80" y="130" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
-        <circle cx="115" cy="157" r="14" fill="#0077b6"/>
-        <text class="node-icon" x="115" y="162">&#xf03d;</text>
-        <text class="node-label" x="180" y="154">Video</text>
-        <text class="node-sublabel" x="180" y="168">Source</text>
+        <rect x="80" y="145" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="115" cy="172" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="115" y="177">&#xf03d;</text>
+        <text class="node-label" x="180" y="169">Video</text>
+        <text class="node-sublabel" x="180" y="183">Source</text>
       </g>
       <g class="dm-node" data-node="audio-source">
-        <rect x="270" y="130" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
-        <circle cx="305" cy="157" r="14" fill="#0077b6"/>
-        <text class="node-icon" x="305" y="162">&#xf130;</text>
-        <text class="node-label" x="370" y="154">Audio</text>
-        <text class="node-sublabel" x="370" y="168">Source</text>
+        <rect x="270" y="145" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="305" cy="172" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="305" y="177">&#xf130;</text>
+        <text class="node-label" x="370" y="169">Audio</text>
+        <text class="node-sublabel" x="370" y="183">Source</text>
       </g>
       <g class="dm-node" data-node="image-source">
-        <rect x="455" y="130" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
-        <circle cx="490" cy="157" r="14" fill="#0077b6"/>
-        <text class="node-icon" x="490" y="162">&#xf03e;</text>
-        <text class="node-label" x="555" y="154">Thumbnails</text>
-        <text class="node-sublabel" x="555" y="168">Image Source</text>
+        <rect x="455" y="145" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="490" cy="172" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="490" y="177">&#xf03e;</text>
+        <text class="node-label" x="555" y="169">Thumbnails</text>
+        <text class="node-sublabel" x="555" y="183">Image Source</text>
       </g>
       <g class="dm-node" data-node="data-source">
-        <rect x="625" y="130" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
-        <circle cx="660" cy="157" r="14" fill="#0077b6"/>
-        <text class="node-icon" x="660" y="162">&#xf1ea;</text>
-        <text class="node-label" x="725" y="154">Subtitles</text>
-        <text class="node-sublabel" x="725" y="168">Data Source</text>
+        <rect x="625" y="145" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="660" cy="172" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="660" y="177">&#xf1ea;</text>
+        <text class="node-label" x="725" y="169">Subtitles</text>
+        <text class="node-sublabel" x="725" y="183">Data Source</text>
       </g>
 
       <!-- === ROW 3: Multi-Essence Flow === -->
@@ -318,17 +318,27 @@ show_sidebar: false
   var nodes = document.querySelectorAll('.dm-node');
   var infoPanel = document.getElementById('dm-info-panel');
 
+  function selectNode(node) {
+    nodes.forEach(function(n) { n.classList.remove('is-active'); });
+    node.classList.add('is-active');
+
+    var key = node.getAttribute('data-node');
+    var info = descriptions[key];
+    if (info) {
+      infoPanel.innerHTML = '<h3>' + info.title + '</h3>' + info.content;
+    }
+  }
+
   nodes.forEach(function(node) {
     node.addEventListener('click', function() {
-      nodes.forEach(function(n) { n.classList.remove('is-active'); });
-      node.classList.add('is-active');
-
-      var key = node.getAttribute('data-node');
-      var info = descriptions[key];
-      if (info) {
-        infoPanel.innerHTML = '<h3>' + info.title + '</h3>' + info.content;
-      }
+      selectNode(node);
     });
   });
+
+  // Select multi-source by default on load
+  var defaultNode = document.querySelector('.dm-node[data-node="multi-source"]');
+  if (defaultNode) {
+    selectNode(defaultNode);
+  }
 })();
 </script>
