@@ -75,14 +75,16 @@ cards:
       **Storage** is the underlying persistence layer where media Objects physically reside. TAMS abstracts access to storage through the API.
 
       **Key points:**
-      - TAMS uses standard cloud object storage (e.g. AWS S3) for media persistence
+      - TAMS uses standard cloud object storage for media persistence
       - The API provides pre-signed URLs so clients upload/download media directly without needing storage credentials
       - Storage is referenced at the Flow level — each Flow has a storage endpoint
       - The store manages the lifecycle of Objects and can track which Objects are still in use
       - Storage backends are implementation-specific — the API is storage-agnostic
       - Media deletion is managed through the API; removing Segments and Flows triggers cleanup of unused Objects
 
-      **Example:** An S3 bucket holding thousands of media chunks, with the TAMS API managing all access control and lifecycle.
+      **Example:** A bucket holding thousands of media chunks, with the TAMS API managing all access control and lifecycle.
 ---
+
+## Key TAMS Concepts
 
 The TAMS data model is built around five key concepts. Click any card below to learn more about how each element works and how they relate to each other.
