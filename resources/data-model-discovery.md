@@ -42,7 +42,7 @@ show_sidebar: false
   .dm-diagram svg {
     width: 100%;
     height: 100%;
-    min-height: 560px;
+    min-height: 580px;
   }
   .dm-node {
     cursor: pointer;
@@ -97,7 +97,7 @@ show_sidebar: false
 
 <div class="dm-container">
   <div class="dm-diagram">
-    <svg viewBox="0 0 820 560" preserveAspectRatio="xMidYMid meet">
+    <svg viewBox="0 0 820 580" preserveAspectRatio="xMidYMid meet">
       <defs>
         <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
           <path d="M0,0 L8,3 L0,6 Z" fill="#555" opacity="0.5"/>
@@ -110,27 +110,27 @@ show_sidebar: false
       <!-- === LINKS === -->
 
       <!-- Multi-Source to mono Sources (collection - dashed) -->
-      <path class="dm-link collection" d="M410,85 C410,125 155,130 155,165" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,85 C410,125 345,130 345,165" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,85 C410,125 530,130 530,165" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,85 C410,125 700,130 700,165" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,85 C410,135 155,140 155,185" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,85 C410,135 345,140 345,185" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,85 C410,135 530,140 530,185" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,85 C410,135 700,140 700,185" marker-end="url(#arrow-blue)"/>
 
       <!-- Multi-Source to Multi-Flow (belongs) -->
-      <line class="dm-link belongs" x1="410" y1="85" x2="410" y2="260" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="410" y1="85" x2="410" y2="280" marker-end="url(#arrow)"/>
 
       <!-- Multi-Flow to mono Flows (collection - dashed) -->
-      <path class="dm-link collection" d="M410,315 C410,355 120,360 120,395" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,315 C410,355 150,365 150,420" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,315 C410,355 350,360 350,400" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,315 C410,355 530,360 530,400" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,315 C410,355 710,360 710,400" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,335 C410,365 120,370 120,395" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,335 C410,365 150,375 150,420" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,335 C410,365 350,370 350,400" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,335 C410,365 530,370 530,400" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,335 C410,365 710,370 710,400" marker-end="url(#arrow-blue)"/>
 
       <!-- Mono Sources to their Flows (belongs - solid) -->
-      <line class="dm-link belongs" x1="155" y1="220" x2="120" y2="395" marker-end="url(#arrow)"/>
-      <line class="dm-link belongs" x1="155" y1="220" x2="150" y2="420" marker-end="url(#arrow)"/>
-      <line class="dm-link belongs" x1="345" y1="220" x2="350" y2="400" marker-end="url(#arrow)"/>
-      <line class="dm-link belongs" x1="530" y1="220" x2="530" y2="400" marker-end="url(#arrow)"/>
-      <line class="dm-link belongs" x1="700" y1="220" x2="710" y2="400" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="155" y1="240" x2="120" y2="395" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="155" y1="240" x2="150" y2="420" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="345" y1="240" x2="350" y2="400" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="530" y1="240" x2="530" y2="400" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="700" y1="240" x2="710" y2="400" marker-end="url(#arrow)"/>
 
       <!-- === ROW 1: Multi-Essence Source === -->
       <g class="dm-node" data-node="multi-source">
@@ -143,41 +143,41 @@ show_sidebar: false
 
       <!-- === ROW 2: Mono Sources === -->
       <g class="dm-node" data-node="video-source">
-        <rect x="80" y="165" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
-        <circle cx="115" cy="192" r="14" fill="#0077b6"/>
-        <text class="node-icon" x="115" y="197">&#xf03d;</text>
-        <text class="node-label" x="180" y="189">Video</text>
-        <text class="node-sublabel" x="180" y="203">Source</text>
+        <rect x="80" y="185" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="115" cy="212" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="115" y="217">&#xf03d;</text>
+        <text class="node-label" x="180" y="209">Video</text>
+        <text class="node-sublabel" x="180" y="223">Source</text>
       </g>
       <g class="dm-node" data-node="audio-source">
-        <rect x="270" y="165" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
-        <circle cx="305" cy="192" r="14" fill="#0077b6"/>
-        <text class="node-icon" x="305" y="197">&#xf130;</text>
-        <text class="node-label" x="370" y="189">Audio</text>
-        <text class="node-sublabel" x="370" y="203">Source</text>
+        <rect x="270" y="185" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="305" cy="212" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="305" y="217">&#xf130;</text>
+        <text class="node-label" x="370" y="209">Audio</text>
+        <text class="node-sublabel" x="370" y="223">Source</text>
       </g>
       <g class="dm-node" data-node="image-source">
-        <rect x="455" y="165" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
-        <circle cx="490" cy="192" r="14" fill="#0077b6"/>
-        <text class="node-icon" x="490" y="197">&#xf03e;</text>
-        <text class="node-label" x="555" y="189">Thumbnails</text>
-        <text class="node-sublabel" x="555" y="203">Image Source</text>
+        <rect x="455" y="185" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="490" cy="212" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="490" y="217">&#xf03e;</text>
+        <text class="node-label" x="555" y="209">Thumbnails</text>
+        <text class="node-sublabel" x="555" y="223">Image Source</text>
       </g>
       <g class="dm-node" data-node="data-source">
-        <rect x="625" y="165" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
-        <circle cx="660" cy="192" r="14" fill="#0077b6"/>
-        <text class="node-icon" x="660" y="197">&#xf1ea;</text>
-        <text class="node-label" x="725" y="189">Subtitles</text>
-        <text class="node-sublabel" x="725" y="203">Data Source</text>
+        <rect x="625" y="185" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="660" cy="212" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="660" y="217">&#xf1ea;</text>
+        <text class="node-label" x="725" y="209">Subtitles</text>
+        <text class="node-sublabel" x="725" y="223">Data Source</text>
       </g>
 
       <!-- === ROW 3: Multi-Essence Flow === -->
       <g class="dm-node" data-node="multi-flow">
-        <rect x="325" y="260" width="170" height="55" fill="#fef3e8" stroke="#e67e22"/>
-        <circle cx="360" cy="287" r="14" fill="#e67e22"/>
-        <text class="node-icon" x="360" y="292">&#xf0e8;</text>
-        <text class="node-label" x="435" y="284">Programme</text>
-        <text class="node-sublabel" x="435" y="298">Multi-Essence Flow</text>
+        <rect x="325" y="280" width="170" height="55" fill="#fef3e8" stroke="#e67e22"/>
+        <circle cx="360" cy="307" r="14" fill="#e67e22"/>
+        <text class="node-icon" x="360" y="312">&#xf0e8;</text>
+        <text class="node-label" x="435" y="304">Programme</text>
+        <text class="node-sublabel" x="435" y="318">Multi-Essence Flow</text>
       </g>
 
       <!-- === ROW 4: Mono Flows === -->
@@ -219,7 +219,7 @@ show_sidebar: false
       </g>
 
       <!-- === LEGEND === -->
-      <g transform="translate(30, 490)">
+      <g transform="translate(30, 510)">
         <text font-size="10" font-weight="600" fill="#333" font-family="sans-serif">Legend:</text>
 
         <line x1="60" y1="0" x2="95" y2="0" stroke="#555" stroke-width="1.5" opacity="0.5"/>
