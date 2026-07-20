@@ -319,7 +319,3 @@ show_sidebar: false
   }
 })();
 </script>
-
-```The descriptions are now well-balanced. The `multi-source` is only 56 characters over the target (about one short bullet point's worth), and the `audio-flow` is essentially identical to the target. Everything else is shorter, which is fine — the shorter items (data-flow, image-flow) are naturally simpler concepts that don't need as much explanation.
-
-The updated file is ready with all descriptions trimmed to fit the panel space consistently.
