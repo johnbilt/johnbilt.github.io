@@ -110,27 +110,27 @@ show_sidebar: false
       <!-- === LINKS === -->
 
       <!-- Multi-Source to mono Sources (collection - dashed) -->
-      <path class="dm-link collection" d="M410,85 C410,115 155,120 155,145" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,85 C410,115 345,120 345,145" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,85 C410,115 530,120 530,145" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,85 C410,115 700,120 700,145" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,85 C410,125 155,130 155,165" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,85 C410,125 345,130 345,165" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,85 C410,125 530,130 530,165" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,85 C410,125 700,130 700,165" marker-end="url(#arrow-blue)"/>
 
       <!-- Multi-Source to Multi-Flow (belongs) -->
       <line class="dm-link belongs" x1="410" y1="85" x2="410" y2="260" marker-end="url(#arrow)"/>
 
       <!-- Multi-Flow to mono Flows (collection - dashed) -->
-      <path class="dm-link collection" d="M410,315 C410,340 120,345 120,375" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,315 C410,340 150,350 150,400" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,315 C410,340 350,345 350,380" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,315 C410,340 530,345 530,380" marker-end="url(#arrow-blue)"/>
-      <path class="dm-link collection" d="M410,315 C410,340 710,345 710,380" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,315 C410,355 120,360 120,395" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,315 C410,355 150,365 150,420" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,315 C410,355 350,360 350,400" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,315 C410,355 530,360 530,400" marker-end="url(#arrow-blue)"/>
+      <path class="dm-link collection" d="M410,315 C410,355 710,360 710,400" marker-end="url(#arrow-blue)"/>
 
       <!-- Mono Sources to their Flows (belongs - solid) -->
-      <line class="dm-link belongs" x1="155" y1="200" x2="120" y2="375" marker-end="url(#arrow)"/>
-      <line class="dm-link belongs" x1="155" y1="200" x2="150" y2="400" marker-end="url(#arrow)"/>
-      <line class="dm-link belongs" x1="345" y1="200" x2="350" y2="380" marker-end="url(#arrow)"/>
-      <line class="dm-link belongs" x1="530" y1="200" x2="530" y2="380" marker-end="url(#arrow)"/>
-      <line class="dm-link belongs" x1="700" y1="200" x2="710" y2="380" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="155" y1="220" x2="120" y2="395" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="155" y1="220" x2="150" y2="420" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="345" y1="220" x2="350" y2="400" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="530" y1="220" x2="530" y2="400" marker-end="url(#arrow)"/>
+      <line class="dm-link belongs" x1="700" y1="220" x2="710" y2="400" marker-end="url(#arrow)"/>
 
       <!-- === ROW 1: Multi-Essence Source === -->
       <g class="dm-node" data-node="multi-source">
