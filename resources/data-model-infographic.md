@@ -29,7 +29,7 @@ cards:
       A **Flow** represents a specific technical rendition of a Source. While Sources represent *what* the content is, Flows represent *how* it is stored and encoded. Flows are the element you create when writing content into TAMS.
 
       **Key points:**
-      - There are four types of Flow: **Video** (video-only segments), **Audio** (audio-only segments), **Data** (non-media segment types), and **Multi** (collecting mono-essence Flows together)
+      - There are five types of Flow: **Video** (video-only segments), **Audio** (audio-only segments), **Data** (non-media segment types), **Images** (still images) and **Multi** (collecting mono-essence Flows together)
       - Each Flow references the Source to which it belongs — if the Source doesn't exist, the store creates it automatically, initially replicating the Flow's label and description
       - For content with multiple versions (e.g. HD and proxy), multiple Flows are created under the same Source — the content must be editorially identical, just with different technical characteristics
       - Multi-essence Flows collect mono-essence Flows together to represent a combined programme — they have no media stored directly against them
