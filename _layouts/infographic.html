@@ -1,0 +1,131 @@
+---
+layout: default
+---
+
+<div class="content">
+  {{ content }}
+</div>
+
+<!-- Infographic Cards -->
+<div class="columns is-multiline is-centered" id="infographic-cards">
+  {% for card in page.cards %}
+  <div class="column is-one-fifth-desktop is-half-tablet">
+    <div class="infographic-card" data-card="{{ forloop.index }}">
+      <div class="infographic-card-icon">
+        <span class="icon is-large">
+          <i class="fas {{ card.icon }} fa-3x"></i>
+        </span>
+      </div>
+      <h3 class="infographic-card-title">{{ card.title }}</h3>
+      <p class="infographic-card-summary">{{ card.summary }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<!-- Detail Panels (hidden by default) -->
+{% for card in page.cards %}
+<div class="infographic-detail" id="detail-{{ forloop.index }}" style="display: none;">
+  <div class="box">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+      <h2 class="title is-4" style="margin: 0;">
+        <span class="icon" style="margin-right: 0.5rem;">
+          <i class="fas {{ card.icon }}"></i>
+        </span>
+        {{ card.title }}
+      </h2>
+      <button class="delete is-medium infographic-close" aria-label="close"></button>
+    </div>
+    <div class="content">
+      {{ card.detail | markdownify }}
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+<style>
+  .infographic-card {
+    background: #fff;
+    border: 2px solid #e8e8e8;
+    border-radius: 8px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .infographic-card:hover {
+    border-color: #003e80;
+    box-shadow: 0 4px 12px rgba(0, 62, 128, 0.15);
+    transform: translateY(-2px);
+  }
+  .infographic-card.is-active {
+    border-color: #003e80;
+    background: #f0f6ff;
+  }
+  .infographic-card-icon {
+    color: #003e80;
+    margin-bottom: 1rem;
+  }
+  .infographic-card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  .infographic-card-summary {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+  }
+  .infographic-detail {
+    margin-top: 1.5rem;
+    animation: fadeIn 0.3s ease;
+  }
+  .infographic-detail .box {
+    border-left: 4px solid #003e80;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+
+<script>
+(function() {
+  var cards = document.querySelectorAll('.infographic-card');
+  var details = document.querySelectorAll('.infographic-detail');
+  var closeButtons = document.querySelectorAll('.infographic-close');
+
+  function closeAll() {
+    cards.forEach(function(c) { c.classList.remove('is-active'); });
+    details.forEach(function(d) { d.style.display = 'none'; });
+  }
+
+  cards.forEach(function(card) {
+    card.addEventListener('click', function() {
+      var cardId = card.getAttribute('data-card');
+      var detail = document.getElementById('detail-' + cardId);
+      var isOpen = detail.style.display !== 'none';
+
+      closeAll();
+
+      if (!isOpen) {
+        card.classList.add('is-active');
+        detail.style.display = 'block';
+        detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
+  });
+
+  closeButtons.forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      closeAll();
+    });
+  });
+})();
+</script>
