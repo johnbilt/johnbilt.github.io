@@ -6,12 +6,14 @@ hero_image: /images/resources_background.png
 show_sidebar: false
 ---
 
+The TAMS data model is built up step by step. Flows are the primary element you create — Sources and their relationships are managed automatically by the store. Use the controls below to walk through the creation sequence.
+
 <style>
   .dc-container {
     display: flex;
     gap: 1.5rem;
     align-items: stretch;
-    min-height: 580px;
+    min-height: 620px;
   }
   @media screen and (max-width: 768px) {
     .dc-container {
@@ -29,7 +31,7 @@ show_sidebar: false
     background: #f8fafd;
     border-radius: 4px;
     overflow-y: auto;
-    max-height: 620px;
+    max-height: 650px;
     display: flex;
     flex-direction: column;
   }
@@ -76,7 +78,7 @@ show_sidebar: false
   .dc-diagram svg {
     width: 100%;
     height: 100%;
-    min-height: 580px;
+    min-height: 620px;
   }
   .dc-node {
     opacity: 0;
@@ -150,20 +152,20 @@ show_sidebar: false
 <div class="dc-container">
   <div class="dc-info" id="dc-info-panel">
     <div class="step-description" id="dc-step-text">
-      <h3>Content Creation in TAMS</h3>
-      <p>This animated diagram shows the step-by-step process of creating content in a TAMS store.</p>
-      <p>Use the <strong>Next</strong> button to walk through each step and see how Sources, Flows, and their relationships are built up.</p>
+      <h3>Step 1: Create Video Flow</h3>
+      <p>Create a <strong>Video Flow</strong> specifying the technical parameters (codec, resolution, frame rate) and a Source ID to link to.</p>
+      <p><strong>What you do:</strong> POST to create a video Flow with a source_id</p>
     </div>
     <div class="dc-controls">
       <button id="dc-prev" disabled>Previous</button>
       <button id="dc-next">Next</button>
       <button id="dc-reset">Reset</button>
-      <span class="step-indicator" id="dc-step-indicator">Step 0 / 4</span>
+      <span class="step-indicator" id="dc-step-indicator">Step 1 / 7</span>
     </div>
   </div>
 
   <div class="dc-diagram">
-    <svg viewBox="0 0 580 520" preserveAspectRatio="xMidYMid meet">
+    <svg viewBox="0 0 580 600" preserveAspectRatio="xMidYMid meet">
       <defs>
         <marker id="c-arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
           <path d="M0,0 L8,3 L0,6 Z" fill="#555" opacity="0.5"/>
@@ -176,28 +178,30 @@ show_sidebar: false
       <!-- === LINKS === -->
 
       <!-- Video Flow → Video Source (belongs) -->
-      <line class="dc-link belongs" data-step="1" x1="150" y1="355" x2="150" y2="200" marker-end="url(#c-arrow)"/>
+      <line class="dc-link belongs" data-step="2" x1="150" y1="320" x2="150" y2="205" marker-end="url(#c-arrow)"/>
 
       <!-- Audio Flow → Audio Source (belongs) -->
-      <line class="dc-link belongs" data-step="2" x1="420" y1="355" x2="420" y2="200" marker-end="url(#c-arrow)"/>
+      <line class="dc-link belongs" data-step="4" x1="420" y1="320" x2="420" y2="205" marker-end="url(#c-arrow)"/>
 
       <!-- Multi Flow → Multi Source (belongs) -->
-      <line class="dc-link belongs" data-step="3" x1="290" y1="355" x2="290" y2="80" marker-end="url(#c-arrow)"/>
-
-      <!-- Multi Source → Video Source (collection) -->
-      <path class="dc-link collection" data-step="4" d="M290,80 C290,120 150,130 150,155" marker-end="url(#c-arrow-blue)"/>
-      <!-- Multi Source → Audio Source (collection) -->
-      <path class="dc-link collection" data-step="4" d="M290,80 C290,120 420,130 420,155" marker-end="url(#c-arrow-blue)"/>
+      <line class="dc-link belongs" data-step="6" x1="290" y1="320" x2="290" y2="85" marker-end="url(#c-arrow)"/>
 
       <!-- Multi Flow → Video Flow (collection) -->
-      <path class="dc-link collection" data-step="4" d="M290,410 C290,430 150,435 150,410" marker-end="url(#c-arrow-blue)"/>
+      <path class="dc-link collection" data-step="5" d="M240,380 C240,410 150,410 150,380" marker-end="url(#c-arrow-blue)"/>
       <!-- Multi Flow → Audio Flow (collection) -->
-      <path class="dc-link collection" data-step="4" d="M290,410 C290,430 420,435 420,410" marker-end="url(#c-arrow-blue)"/>
+      <path class="dc-link collection" data-step="5" d="M340,380 C340,410 420,410 420,380" marker-end="url(#c-arrow-blue)"/>
 
-      <!-- === SOURCES (Row 1 & 2) === -->
+      <!-- Multi Source → Video Source (collection) -->
+      <path class="dc-link collection" data-step="6" d="M290,85 C290,125 150,130 150,150" marker-end="url(#c-arrow-blue)"/>
+      <!-- Multi Source → Audio Source (collection) -->
+      <path class="dc-link collection" data-step="6" d="M290,85 C290,125 420,130 420,150" marker-end="url(#c-arrow-blue)"/>
 
-      <!-- Multi-Essence Source -->
-      <g class="dc-node" data-step="3" data-node="multi-source">
+      <!-- Segment lines to flows -->
+      <line class="dc-link belongs" data-step="7" x1="150" y1="470" x2="150" y2="380" marker-end="url(#c-arrow)"/>
+      <line class="dc-link belongs" data-step="7" x1="420" y1="470" x2="420" y2="380" marker-end="url(#c-arrow)"/>
+
+      <!-- === ROW 1: Multi-Essence Source === -->
+      <g class="dc-node" data-step="6" data-node="multi-source">
         <rect x="205" y="30" width="170" height="55" fill="#e8f4f8" stroke="#0077b6"/>
         <circle cx="240" cy="57" r="14" fill="#0077b6"/>
         <text class="node-icon" x="240" y="62">&#xf0e8;</text>
@@ -205,8 +209,8 @@ show_sidebar: false
         <text class="node-sublabel" x="315" y="68">Multi-Essence Source</text>
       </g>
 
-      <!-- Video Source -->
-      <g class="dc-node" data-step="1" data-node="video-source">
+      <!-- === ROW 2: Mono Sources === -->
+      <g class="dc-node" data-step="2" data-node="video-source">
         <rect x="75" y="150" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
         <circle cx="110" cy="177" r="14" fill="#0077b6"/>
         <text class="node-icon" x="110" y="182">&#xf03d;</text>
@@ -214,8 +218,7 @@ show_sidebar: false
         <text class="node-sublabel" x="175" y="188">Source</text>
       </g>
 
-      <!-- Audio Source -->
-      <g class="dc-node" data-step="2" data-node="audio-source">
+      <g class="dc-node" data-step="4" data-node="audio-source">
         <rect x="345" y="150" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
         <circle cx="380" cy="177" r="14" fill="#0077b6"/>
         <text class="node-icon" x="380" y="182">&#xf130;</text>
@@ -223,46 +226,53 @@ show_sidebar: false
         <text class="node-sublabel" x="445" y="188">Source</text>
       </g>
 
-      <!-- === FLOWS (Row 3) === -->
-
-      <!-- Video Flow -->
+      <!-- === ROW 3: Flows === -->
       <g class="dc-node" data-step="1" data-node="video-flow">
-        <rect x="75" y="355" width="150" height="55" fill="#fef3e8" stroke="#e67e22"/>
-        <circle cx="110" cy="382" r="14" fill="#e67e22"/>
-        <text class="node-icon" x="110" y="387">&#xf03d;</text>
-        <text class="node-label" x="175" y="379">1080p50 H.264</text>
-        <text class="node-sublabel" x="175" y="393">Video Flow</text>
+        <rect x="75" y="325" width="150" height="55" fill="#fef3e8" stroke="#e67e22"/>
+        <circle cx="110" cy="352" r="14" fill="#e67e22"/>
+        <text class="node-icon" x="110" y="357">&#xf03d;</text>
+        <text class="node-label" x="175" y="349">1080p50 H.264</text>
+        <text class="node-sublabel" x="175" y="363">Video Flow</text>
       </g>
 
-      <!-- Multi-Essence Flow -->
-      <g class="dc-node" data-step="3" data-node="multi-flow">
-        <rect x="205" y="355" width="170" height="55" fill="#fef3e8" stroke="#e67e22"/>
-        <circle cx="240" cy="382" r="14" fill="#e67e22"/>
-        <text class="node-icon" x="240" y="387">&#xf0e8;</text>
-        <text class="node-label" x="315" y="379">Programme</text>
-        <text class="node-sublabel" x="315" y="393">Multi-Essence Flow</text>
+      <g class="dc-node" data-step="5" data-node="multi-flow">
+        <rect x="205" y="325" width="170" height="55" fill="#fef3e8" stroke="#e67e22"/>
+        <circle cx="240" cy="352" r="14" fill="#e67e22"/>
+        <text class="node-icon" x="240" y="357">&#xf0e8;</text>
+        <text class="node-label" x="315" y="349">Programme</text>
+        <text class="node-sublabel" x="315" y="363">Multi-Essence Flow</text>
       </g>
 
-      <!-- Audio Flow -->
-      <g class="dc-node" data-step="2" data-node="audio-flow">
-        <rect x="345" y="355" width="150" height="55" fill="#fef3e8" stroke="#e67e22"/>
-        <circle cx="380" cy="382" r="14" fill="#e67e22"/>
-        <text class="node-icon" x="380" y="387">&#xf130;</text>
-        <text class="node-label" x="445" y="379">48kHz PCM</text>
-        <text class="node-sublabel" x="445" y="393">Audio Flow</text>
+      <g class="dc-node" data-step="3" data-node="audio-flow">
+        <rect x="345" y="325" width="150" height="55" fill="#fef3e8" stroke="#e67e22"/>
+        <circle cx="380" cy="352" r="14" fill="#e67e22"/>
+        <text class="node-icon" x="380" y="357">&#xf130;</text>
+        <text class="node-label" x="445" y="349">48kHz PCM</text>
+        <text class="node-sublabel" x="445" y="363">Audio Flow</text>
+      </g>
+
+      <!-- === ROW 4: Segments === -->
+      <g class="dc-node" data-step="7" data-node="video-segments">
+        <rect x="75" y="470" width="150" height="45" fill="#f0f0f0" stroke="#888"/>
+        <text class="node-label" x="150" y="495">Video Segments</text>
+      </g>
+
+      <g class="dc-node" data-step="7" data-node="audio-segments">
+        <rect x="345" y="470" width="150" height="45" fill="#f0f0f0" stroke="#888"/>
+        <text class="node-label" x="420" y="495">Audio Segments</text>
       </g>
 
       <!-- === ACTION LABELS === -->
-      <text class="dc-action-label" data-step="1" x="150" y="340">CREATE</text>
-      <text class="dc-action-label" data-step="1" x="150" y="270" fill="#0077b6">AUTO-CREATED</text>
-      <text class="dc-action-label" data-step="2" x="420" y="340">CREATE</text>
-      <text class="dc-action-label" data-step="2" x="420" y="270" fill="#0077b6">AUTO-CREATED</text>
-      <text class="dc-action-label" data-step="3" x="290" y="340">CREATE</text>
-      <text class="dc-action-label" data-step="3" x="290" y="120" fill="#0077b6">AUTO-CREATED</text>
-      <text class="dc-action-label" data-step="4" x="290" y="445">COLLECT</text>
+      <text class="dc-action-label" data-step="1" x="150" y="315">CREATE</text>
+      <text class="dc-action-label" data-step="2" x="150" y="140" style="fill: #0077b6;">AUTO-CREATED</text>
+      <text class="dc-action-label" data-step="3" x="420" y="315">CREATE</text>
+      <text class="dc-action-label" data-step="4" x="420" y="140" style="fill: #0077b6;">AUTO-CREATED</text>
+      <text class="dc-action-label" data-step="5" x="290" y="315">CREATE + COLLECT</text>
+      <text class="dc-action-label" data-step="6" x="290" y="20" style="fill: #0077b6;">AUTO-CREATED + COLLECTED</text>
+      <text class="dc-action-label" data-step="7" x="290" y="530">UPLOAD + REGISTER</text>
 
       <!-- === LEGEND === -->
-      <g transform="translate(20, 470)">
+      <g transform="translate(20, 555)">
         <text font-size="10" font-weight="600" fill="#333" font-family="sans-serif">Legend:</text>
 
         <line x1="60" y1="0" x2="95" y2="0" stroke="#555" stroke-width="1.5" opacity="0.5"/>
@@ -285,31 +295,39 @@ show_sidebar: false
 
 <script>
 (function() {
-  var currentStep = 0;
-  var totalSteps = 4;
+  var currentStep = 1;
+  var totalSteps = 7;
 
-  var stepDescriptions = [
-    {
-      title: 'Content Creation in TAMS',
-      content: '<p>This animated diagram shows the step-by-step process of creating content in a TAMS store.</p><p>Use the <strong>Next</strong> button to walk through each step and see how Sources, Flows, and their relationships are built up.</p>'
-    },
-    {
+  var stepDescriptions = {
+    1: {
       title: 'Step 1: Create Video Flow',
-      content: '<p>The first action is to <strong>create a Video Flow</strong> specifying the technical parameters (codec, resolution, frame rate) and a Source ID.</p><p>The store automatically creates the <strong>Video Source</strong> because no Source with that ID exists yet. The Source inherits the Flow\'s label and description.</p><p><strong>What you do:</strong> POST to create a video Flow with a source_id</p><p><strong>What the store does:</strong> Creates the Source automatically</p>'
+      content: '<p>Create a <strong>Video Flow</strong> specifying the technical parameters (codec, resolution, frame rate) and a Source ID to link to.</p><p><strong>What you do:</strong> POST to create a video Flow with a source_id</p>'
     },
-    {
-      title: 'Step 2: Create Audio Flow',
-      content: '<p>Next, <strong>create an Audio Flow</strong> with its own technical parameters (sample rate, bit depth, codec) and a different Source ID.</p><p>Again, the store automatically creates the <strong>Audio Source</strong> because the referenced Source doesn\'t exist yet.</p><p><strong>What you do:</strong> POST to create an audio Flow with a new source_id</p><p><strong>What the store does:</strong> Creates the Audio Source automatically</p>'
+    2: {
+      title: 'Step 2: Video Source Auto-Created',
+      content: '<p>The Source ID referenced by the Video Flow does not exist in the store, so the store <strong>automatically creates the Video Source</strong>.</p><p>The Source inherits the label and description from the Flow.</p><p><strong>What the store does:</strong> Creates the Video Source and links the Flow to it</p>'
     },
-    {
-      title: 'Step 3: Create Multi-Essence Flow',
-      content: '<p>Now <strong>create a Multi-Essence Flow</strong> with a new Source ID. This Flow has no media stored directly against it — it exists to collect the mono-essence Flows together.</p><p>The store automatically creates the <strong>Multi-Essence Source</strong> — the top-level entity that represents the complete programme.</p><p><strong>What you do:</strong> POST to create a multi-essence Flow with a new source_id</p><p><strong>What the store does:</strong> Creates the Multi-Essence Source automatically</p>'
+    3: {
+      title: 'Step 3: Create Audio Flow',
+      content: '<p>Create an <strong>Audio Flow</strong> with its technical parameters (sample rate, bit depth, codec) and a new Source ID.</p><p><strong>What you do:</strong> POST to create an audio Flow with a new source_id</p>'
     },
-    {
-      title: 'Step 4: Create Flow Collection',
-      content: '<p>Finally, <strong>add the Video and Audio Flows to the Multi-Essence Flow\'s collection</strong>. This tells the store which mono-essence Flows make up the programme.</p><p>The store automatically resolves the Source relationships — it links the Video Source and Audio Source into the Multi-Essence Source\'s collection.</p><p><strong>What you do:</strong> PUT to add video and audio Flows to the multi-essence Flow collection</p><p><strong>What the store does:</strong> Creates the collection links between Sources automatically</p>'
+    4: {
+      title: 'Step 4: Audio Source Auto-Created',
+      content: '<p>The Source ID referenced by the Audio Flow does not exist, so the store <strong>automatically creates the Audio Source</strong>.</p><p><strong>What the store does:</strong> Creates the Audio Source and links the Flow to it</p>'
+    },
+    5: {
+      title: 'Step 5: Create Multi-Essence Flow with Collection',
+      content: '<p>Create a <strong>Multi-Essence Flow</strong> referencing a new Source ID and specifying the Video and Audio Flows as part of its collection.</p><p>This Flow has no media stored against it — it represents the combined programme.</p><p><strong>What you do:</strong> POST to create a multi-essence Flow, including the video and audio Flow IDs in the collection</p>'
+    },
+    6: {
+      title: 'Step 6: Multi-Essence Source Auto-Created',
+      content: '<p>The store <strong>automatically creates the Multi-Essence Source</strong> and resolves the collection relationships — linking the Video Source and Audio Source into the Multi-Essence Source\'s collection.</p><p><strong>What the store does:</strong> Creates the Multi-Essence Source, creates collection links between all Sources based on the Flow collections</p>'
+    },
+    7: {
+      title: 'Step 7: Upload and Register Segments',
+      content: '<p><strong>Upload media segments</strong> to object storage using pre-signed URLs from the API, then register each segment against the appropriate Flow with its timerange.</p><p>Segments are registered against the mono-essence Flows only (Video Flow and Audio Flow). The Multi-Essence Flow has no segments.</p><p><strong>What you do:</strong> Request pre-signed URLs, upload media, then POST to register segments with their timeranges</p>'
     }
-  ];
+  };
 
   var prevBtn = document.getElementById('dc-prev');
   var nextBtn = document.getElementById('dc-next');
@@ -318,7 +336,6 @@ show_sidebar: false
   var stepIndicator = document.getElementById('dc-step-indicator');
 
   function updateDiagram() {
-    // Show/hide elements based on current step
     var nodes = document.querySelectorAll('.dc-node');
     var links = document.querySelectorAll('.dc-link');
     var labels = document.querySelectorAll('.dc-action-label');
@@ -327,7 +344,6 @@ show_sidebar: false
       var step = parseInt(node.getAttribute('data-step'));
       if (step <= currentStep) {
         node.classList.add('visible');
-        // Highlight only the current step's nodes
         if (step === currentStep) {
           node.classList.add('highlight');
         } else {
@@ -357,12 +373,10 @@ show_sidebar: false
       }
     });
 
-    // Update description
     var desc = stepDescriptions[currentStep];
     stepText.innerHTML = '<h3>' + desc.title + '</h3>' + desc.content;
 
-    // Update buttons
-    prevBtn.disabled = (currentStep === 0);
+    prevBtn.disabled = (currentStep === 1);
     nextBtn.disabled = (currentStep === totalSteps);
     stepIndicator.textContent = 'Step ' + currentStep + ' / ' + totalSteps;
   }
@@ -375,18 +389,17 @@ show_sidebar: false
   });
 
   prevBtn.addEventListener('click', function() {
-    if (currentStep > 0) {
+    if (currentStep > 1) {
       currentStep--;
       updateDiagram();
     }
   });
 
   resetBtn.addEventListener('click', function() {
-    currentStep = 0;
+    currentStep = 1;
     updateDiagram();
   });
 
-  // Initial state
   updateDiagram();
 })();
 </script>
