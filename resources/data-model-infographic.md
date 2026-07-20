@@ -6,7 +6,7 @@ hero_image: /images/resources_background.png
 show_sidebar: false
 cards:
   - title: Sources
-    icon: fa-broadcast-tower
+    icon: fa-project-diagram
     summary: The logical representation of a piece of content, independent of any particular format or resolution.
     detail: |
       A **Source** represents a piece of content at its most abstract level — it identifies *what* the content is, not how it's stored or encoded.
@@ -36,6 +36,22 @@ cards:
 
       **Example:** A 1080p50 H.264 video flow, a 48kHz PCM audio flow, and a multi-essence flow collecting them together.
 
+  - title: Time Ranges
+    icon: fa-clock
+    summary: The temporal boundaries that define when content exists on a Flow's timeline, expressed as start and end points.
+    detail: |
+      A **Time Range** defines a span of time on a Flow's timeline. It is the fundamental mechanism for addressing media by time in TAMS.
+
+      **Key points:**
+      - Time ranges use a start and end point to define a temporal window
+      - They are used when registering Segments to specify where media sits on the timeline
+      - Time ranges allow queries against the store — you can request all media within a given window
+      - Overlapping time ranges on the same Flow are supported (e.g. when new media replaces old)
+      - Time ranges enable edit-by-reference by allowing the same Object to appear at different positions
+      - The timing model supports both continuous (live) and discrete (file-based) workflows
+
+      **Example:** A time range of 00:01:30.000 to 00:01:36.000 on a video Flow, representing 6 seconds of content at a specific point on the timeline.
+
   - title: Segments
     icon: fa-puzzle-piece
     summary: A time-ranged portion of a Flow's timeline, pointing to the media Object that contains the actual content.
@@ -53,7 +69,7 @@ cards:
       **Example:** A 10-second chunk of video covering 00:01:30 to 00:01:40 on the Flow timeline, pointing to a media file in object storage.
 
   - title: Objects
-    icon: fa-cube
+    icon: fa-file
     summary: The actual media files stored in object storage, accessed via pre-signed URLs from the TAMS API.
     detail: |
       An **Object** is the physical media file — the actual bytes of video, audio or data stored in object storage (e.g. S3).
@@ -87,4 +103,4 @@ cards:
 
 ## Key TAMS Concepts
 
-The TAMS data model is built around five key concepts. Click any card below to learn more about how each element works and how they relate to each other.
+The TAMS data model is built around six key concepts. Click any card below to learn more about how each element works and how they relate to each other.
