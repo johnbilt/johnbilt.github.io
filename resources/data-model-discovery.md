@@ -143,32 +143,32 @@ show_sidebar: false
 
       <!-- === ROW 2: Mono Sources === -->
       <g class="dm-node" data-node="video-source">
-        <rect x="80" y="145" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
-        <circle cx="115" cy="172" r="14" fill="#0077b6"/>
-        <text class="node-icon" x="115" y="177">&#xf03d;</text>
-        <text class="node-label" x="180" y="169">Video</text>
-        <text class="node-sublabel" x="180" y="183">Source</text>
+        <rect x="80" y="165" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="115" cy="192" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="115" y="197">&#xf03d;</text>
+        <text class="node-label" x="180" y="189">Video</text>
+        <text class="node-sublabel" x="180" y="203">Source</text>
       </g>
       <g class="dm-node" data-node="audio-source">
-        <rect x="270" y="145" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
-        <circle cx="305" cy="172" r="14" fill="#0077b6"/>
-        <text class="node-icon" x="305" y="177">&#xf130;</text>
-        <text class="node-label" x="370" y="169">Audio</text>
-        <text class="node-sublabel" x="370" y="183">Source</text>
+        <rect x="270" y="165" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="305" cy="192" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="305" y="197">&#xf130;</text>
+        <text class="node-label" x="370" y="189">Audio</text>
+        <text class="node-sublabel" x="370" y="203">Source</text>
       </g>
       <g class="dm-node" data-node="image-source">
-        <rect x="455" y="145" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
-        <circle cx="490" cy="172" r="14" fill="#0077b6"/>
-        <text class="node-icon" x="490" y="177">&#xf03e;</text>
-        <text class="node-label" x="555" y="169">Thumbnails</text>
-        <text class="node-sublabel" x="555" y="183">Image Source</text>
+        <rect x="455" y="165" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="490" cy="192" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="490" y="197">&#xf03e;</text>
+        <text class="node-label" x="555" y="189">Thumbnails</text>
+        <text class="node-sublabel" x="555" y="203">Image Source</text>
       </g>
       <g class="dm-node" data-node="data-source">
-        <rect x="625" y="145" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
-        <circle cx="660" cy="172" r="14" fill="#0077b6"/>
-        <text class="node-icon" x="660" y="177">&#xf1ea;</text>
-        <text class="node-label" x="725" y="169">Subtitles</text>
-        <text class="node-sublabel" x="725" y="183">Data Source</text>
+        <rect x="625" y="165" width="150" height="55" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="660" cy="192" r="14" fill="#0077b6"/>
+        <text class="node-icon" x="660" y="197">&#xf1ea;</text>
+        <text class="node-label" x="725" y="189">Subtitles</text>
+        <text class="node-sublabel" x="725" y="203">Data Source</text>
       </g>
 
       <!-- === ROW 3: Multi-Essence Flow === -->
@@ -183,80 +183,58 @@ show_sidebar: false
       <!-- === ROW 4: Mono Flows === -->
       <!-- Video Flows - stacked/overlapping to show they're a set -->
       <g class="dm-node" data-node="video-flow-proxy">
-        <rect x="75" y="400" width="150" height="55" fill="#fef3e8" stroke="#e67e22"/>
-        <circle cx="110" cy="427" r="14" fill="#e67e22"/>
-        <text class="node-icon" x="110" y="432">&#xf03d;</text>
-        <text class="node-label" x="175" y="420">720p Proxy</text>
-        <text class="node-sublabel" x="175" y="434">Video Flow</text>
+        <rect x="75" y="420" width="150" height="55" fill="#fef3e8" stroke="#e67e22"/>
+        <circle cx="110" cy="447" r="14" fill="#e67e22"/>
+        <text class="node-icon" x="110" y="452">&#xf03d;</text>
+        <text class="node-label" x="175" y="440">720p Proxy</text>
+        <text class="node-sublabel" x="175" y="454">Video Flow</text>
       </g>
       <g class="dm-node" data-node="video-flow-hires">
-        <rect x="45" y="375" width="150" height="55" fill="#fef3e8" stroke="#e67e22"/>
-        <circle cx="80" cy="402" r="14" fill="#e67e22"/>
-        <text class="node-icon" x="80" y="407">&#xf03d;</text>
-        <text class="node-label" x="145" y="395">1080p50 H.264</text>
-        <text class="node-sublabel" x="145" y="409">Video Flow</text>
+        <rect x="45" y="395" width="150" height="55" fill="#fef3e8" stroke="#e67e22"/>
+        <circle cx="80" cy="422" r="14" fill="#e67e22"/>
+        <text class="node-icon" x="80" y="427">&#xf03d;</text>
+        <text class="node-label" x="145" y="415">1080p50 H.264</text>
+        <text class="node-sublabel" x="145" y="429">Video Flow</text>
       </g>
       <g class="dm-node" data-node="audio-flow">
-        <rect x="280" y="380" width="140" height="55" fill="#fef3e8" stroke="#e67e22"/>
-        <circle cx="315" cy="407" r="14" fill="#e67e22"/>
-        <text class="node-icon" x="315" y="412">&#xf130;</text>
-        <text class="node-label" x="375" y="400">48kHz PCM</text>
-        <text class="node-sublabel" x="375" y="414">Audio Flow</text>
+        <rect x="280" y="400" width="140" height="55" fill="#fef3e8" stroke="#e67e22"/>
+        <circle cx="315" cy="427" r="14" fill="#e67e22"/>
+        <text class="node-icon" x="315" y="432">&#xf130;</text>
+        <text class="node-label" x="375" y="420">48kHz PCM</text>
+        <text class="node-sublabel" x="375" y="434">Audio Flow</text>
       </g>
       <g class="dm-node" data-node="image-flow">
-        <rect x="460" y="380" width="140" height="55" fill="#fef3e8" stroke="#e67e22"/>
-        <circle cx="495" cy="407" r="14" fill="#e67e22"/>
-        <text class="node-icon" x="495" y="412">&#xf03e;</text>
-        <text class="node-label" x="555" y="400">Thumbnails</text>
-        <text class="node-sublabel" x="555" y="414">Image Flow</text>
+        <rect x="460" y="400" width="140" height="55" fill="#fef3e8" stroke="#e67e22"/>
+        <circle cx="495" cy="427" r="14" fill="#e67e22"/>
+        <text class="node-icon" x="495" y="432">&#xf03e;</text>
+        <text class="node-label" x="555" y="420">Thumbnails</text>
+        <text class="node-sublabel" x="555" y="434">Image Flow</text>
       </g>
       <g class="dm-node" data-node="data-flow">
-        <rect x="640" y="380" width="140" height="55" fill="#fef3e8" stroke="#e67e22"/>
-        <circle cx="675" cy="407" r="14" fill="#e67e22"/>
-        <text class="node-icon" x="675" y="412">&#xf1ea;</text>
-        <text class="node-label" x="735" y="400">Subtitles</text>
-        <text class="node-sublabel" x="735" y="414">Data Flow</text>
+        <rect x="640" y="400" width="140" height="55" fill="#fef3e8" stroke="#e67e22"/>
+        <circle cx="675" cy="427" r="14" fill="#e67e22"/>
+        <text class="node-icon" x="675" y="432">&#xf1ea;</text>
+        <text class="node-label" x="735" y="420">Subtitles</text>
+        <text class="node-sublabel" x="735" y="434">Data Flow</text>
       </g>
 
       <!-- === LEGEND === -->
-      <g transform="translate(30, 475)">
+      <g transform="translate(30, 490)">
         <text font-size="10" font-weight="600" fill="#333" font-family="sans-serif">Legend:</text>
 
-        <line x1="0" y1="22" x2="35" y2="22" stroke="#555" stroke-width="1.5" opacity="0.5"/>
-        <polygon points="35,19 41,22 35,25" fill="#555" opacity="0.5"/>
-        <text x="48" y="26" font-size="10" fill="#666" font-family="sans-serif">Belongs to</text>
+        <line x1="60" y1="0" x2="95" y2="0" stroke="#555" stroke-width="1.5" opacity="0.5"/>
+        <polygon points="95,-3 101,0 95,3" fill="#555" opacity="0.5"/>
+        <text x="108" y="4" font-size="10" fill="#666" font-family="sans-serif">Belongs to</text>
 
-        <line x1="170" y1="22" x2="205" y2="22" stroke="#003e80" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.6"/>
-        <polygon points="205,19 211,22 205,25" fill="#003e80" opacity="0.6"/>
-        <text x="218" y="26" font-size="10" fill="#666" font-family="sans-serif">Collection</text>
+        <line x1="200" y1="0" x2="235" y2="0" stroke="#003e80" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.6"/>
+        <polygon points="235,-3 241,0 235,3" fill="#003e80" opacity="0.6"/>
+        <text x="248" y="4" font-size="10" fill="#666" font-family="sans-serif">Collection</text>
 
-        <!-- Colour key -->
-        <rect x="0" y="40" width="14" height="14" rx="3" fill="#e8f4f8" stroke="#0077b6" stroke-width="1.5"/>
-        <text x="20" y="51" font-size="10" fill="#666" font-family="sans-serif">Source</text>
+        <rect x="350" y="-7" width="14" height="14" rx="3" fill="#e8f4f8" stroke="#0077b6" stroke-width="1.5"/>
+        <text x="370" y="4" font-size="10" fill="#666" font-family="sans-serif">Source</text>
 
-        <rect x="80" y="40" width="14" height="14" rx="3" fill="#fef3e8" stroke="#e67e22" stroke-width="1.5"/>
-        <text x="100" y="51" font-size="10" fill="#666" font-family="sans-serif">Flow</text>
-
-        <!-- Icon key -->
-        <circle cx="187" cy="47" r="8" fill="#666"/>
-        <text x="187" y="51" font-family="Font Awesome 5 Free" font-weight="900" font-size="8" fill="#fff" text-anchor="middle">&#xf03d;</text>
-        <text x="200" y="51" font-size="10" fill="#666" font-family="sans-serif">Video</text>
-
-        <circle cx="262" cy="47" r="8" fill="#666"/>
-        <text x="262" y="51" font-family="Font Awesome 5 Free" font-weight="900" font-size="8" fill="#fff" text-anchor="middle">&#xf130;</text>
-        <text x="275" y="51" font-size="10" fill="#666" font-family="sans-serif">Audio</text>
-
-        <circle cx="337" cy="47" r="8" fill="#666"/>
-        <text x="337" y="51" font-family="Font Awesome 5 Free" font-weight="900" font-size="8" fill="#fff" text-anchor="middle">&#xf03e;</text>
-        <text x="350" y="51" font-size="10" fill="#666" font-family="sans-serif">Image</text>
-
-        <circle cx="407" cy="47" r="8" fill="#666"/>
-        <text x="407" y="51" font-family="Font Awesome 5 Free" font-weight="900" font-size="8" fill="#fff" text-anchor="middle">&#xf1ea;</text>
-        <text x="420" y="51" font-size="10" fill="#666" font-family="sans-serif">Data</text>
-
-        <circle cx="472" cy="47" r="8" fill="#666"/>
-        <text x="472" y="51" font-family="Font Awesome 5 Free" font-weight="900" font-size="8" fill="#fff" text-anchor="middle">&#xf0e8;</text>
-        <text x="485" y="51" font-size="10" fill="#666" font-family="sans-serif">Multi</text>
+        <rect x="430" y="-7" width="14" height="14" rx="3" fill="#fef3e8" stroke="#e67e22" stroke-width="1.5"/>
+        <text x="450" y="4" font-size="10" fill="#666" font-family="sans-serif">Flow</text>
       </g>
     </svg>
   </div>
