@@ -1,0 +1,192 @@
+---
+layout: default
+---
+
+<div class="content">
+  {{ content }}
+</div>
+
+<!-- Radial Infographic -->
+<div class="radial-container" id="radial-infographic">
+  <div class="radial-hub">
+    <span class="icon">
+      <i class="fas {{ page.hub_icon }} fa-3x"></i>
+    </span>
+    <h3>{{ page.hub_title }}</h3>
+  </div>
+  <div class="radial-spokes">
+    {% for card in page.cards %}
+    <div class="radial-card" data-card="{{ forloop.index }}">
+      <div class="radial-card-icon">
+        <span class="icon">
+          <i class="fas {{ card.icon }} fa-2x"></i>
+        </span>
+      </div>
+      <div class="radial-card-body">
+        <h4 class="radial-card-title">{{ card.title }}</h4>
+        <p class="radial-card-summary">{{ card.summary }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- Detail Panels (hidden by default) -->
+{% for card in page.cards %}
+<div class="radial-detail" id="detail-{{ forloop.index }}" style="display: none;">
+  <div class="box">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+      <h2 class="title is-4" style="margin: 0;">
+        <span class="icon" style="margin-right: 0.5rem;">
+          <i class="fas {{ card.icon }}"></i>
+        </span>
+        {{ card.title }}
+      </h2>
+      <button class="delete is-medium radial-close" aria-label="close"></button>
+    </div>
+    <div class="content">
+      {{ card.detail | markdownify }}
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+<style>
+  .radial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  .radial-hub {
+    background: #003e80;
+    color: #fff;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 62, 128, 0.3);
+  }
+  .radial-hub h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 0.5rem 0 0 0;
+    color: #fff;
+  }
+  .radial-hub .icon {
+    color: #fff;
+  }
+  .radial-spokes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%;
+    max-width: 900px;
+  }
+  @media screen and (max-width: 768px) {
+    .radial-spokes {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .radial-spokes {
+      grid-template-columns: 1fr;
+    }
+  }
+  .radial-card {
+    background: #fff;
+    border: 2px solid #e8e8e8;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+    position: relative;
+  }
+  .radial-card:hover {
+    border-color: #003e80;
+    box-shadow: 0 4px 12px rgba(0, 62, 128, 0.15);
+    transform: translateY(-2px);
+  }
+  .radial-card.is-active {
+    border-color: #003e80;
+    background: #f0f6ff;
+  }
+  .radial-card-icon {
+    color: #003e80;
+    flex-shrink: 0;
+    width: 2.5rem;
+    text-align: center;
+  }
+  .radial-card-body {
+    flex: 1;
+  }
+  .radial-card-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 0.15rem;
+    color: #333;
+  }
+  .radial-card-summary {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.4;
+  }
+  .radial-detail {
+    margin-top: 1.5rem;
+    width: 100%;
+    animation: radialFadeIn 0.3s ease;
+  }
+  .radial-detail .box {
+    border-left: 4px solid #003e80;
+  }
+  @keyframes radialFadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+
+<script>
+(function() {
+  var cards = document.querySelectorAll('.radial-card');
+  var details = document.querySelectorAll('.radial-detail');
+  var closeButtons = document.querySelectorAll('.radial-close');
+
+  function closeAll() {
+    cards.forEach(function(c) { c.classList.remove('is-active'); });
+    details.forEach(function(d) { d.style.display = 'none'; });
+  }
+
+  cards.forEach(function(card) {
+    card.addEventListener('click', function() {
+      var cardId = card.getAttribute('data-card');
+      var detail = document.getElementById('detail-' + cardId);
+      var isOpen = detail.style.display !== 'none';
+
+      closeAll();
+
+      if (!isOpen) {
+        card.classList.add('is-active');
+        detail.style.display = 'block';
+        detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
+  });
+
+  closeButtons.forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      closeAll();
+    });
+  });
+})();
+</script>
