@@ -178,102 +178,102 @@ The TAMS data model is built up step by step. Flows are the primary element you 
       <!-- === LINKS === -->
 
       <!-- Video Flow → Video Source (belongs) -->
-      <line class="dc-link belongs" data-step="2" x1="150" y1="295" x2="150" y2="145" marker-end="url(#c-arrow)"/>
+      <line class="dc-link belongs" data-step="2" x1="150" y1="270" x2="150" y2="150" marker-end="url(#c-arrow)"/>
 
       <!-- Audio Flow → Audio Source (belongs) -->
-      <line class="dc-link belongs" data-step="4" x1="420" y1="295" x2="420" y2="145" marker-end="url(#c-arrow)"/>
+      <line class="dc-link belongs" data-step="4" x1="420" y1="270" x2="420" y2="150" marker-end="url(#c-arrow)"/>
 
       <!-- Multi Flow → Multi Source (belongs) -->
-      <line class="dc-link belongs" data-step="6" x1="290" y1="205" x2="290" y2="60" marker-end="url(#c-arrow)"/>
+      <line class="dc-link belongs" data-step="6" x1="290" y1="185" x2="290" y2="65" marker-end="url(#c-arrow)"/>
 
       <!-- Multi Flow → Video Flow (collection) -->
-      <path class="dc-link collection" data-step="5" d="M240,260 C240,280 150,280 150,295" marker-end="url(#c-arrow-blue)"/>
+      <path class="dc-link collection" data-step="5" d="M240,235 C240,255 150,255 150,270" marker-end="url(#c-arrow-blue)"/>
       <!-- Multi Flow → Audio Flow (collection) -->
-      <path class="dc-link collection" data-step="5" d="M340,260 C340,280 420,280 420,295" marker-end="url(#c-arrow-blue)"/>
+      <path class="dc-link collection" data-step="5" d="M340,235 C340,255 420,255 420,270" marker-end="url(#c-arrow-blue)"/>
 
       <!-- Multi Source → Video Source (collection) -->
-      <path class="dc-link collection" data-step="6" d="M260,60 C250,80 150,80 150,90" marker-end="url(#c-arrow-blue)"/>
+      <path class="dc-link collection" data-step="6" d="M260,65 C250,82 150,82 150,100" marker-end="url(#c-arrow-blue)"/>
       <!-- Multi Source → Audio Source (collection) -->
-      <path class="dc-link collection" data-step="6" d="M320,60 C330,80 420,80 420,90" marker-end="url(#c-arrow-blue)"/>
+      <path class="dc-link collection" data-step="6" d="M320,65 C330,82 420,82 420,100" marker-end="url(#c-arrow-blue)"/>
 
       <!-- Segment lines to flows -->
-      <line class="dc-link belongs" data-step="7" x1="150" y1="380" x2="150" y2="350" marker-end="url(#c-arrow)"/>
-      <line class="dc-link belongs" data-step="7" x1="420" y1="380" x2="420" y2="350" marker-end="url(#c-arrow)"/>
+      <line class="dc-link belongs" data-step="7" x1="150" y1="355" x2="150" y2="320" marker-end="url(#c-arrow)"/>
+      <line class="dc-link belongs" data-step="7" x1="420" y1="355" x2="420" y2="320" marker-end="url(#c-arrow)"/>
 
       <!-- === ROW 1: Multi-Essence Source === -->
       <g class="dc-node" data-step="6" data-node="multi-source">
-        <rect x="205" y="10" width="170" height="50" fill="#e8f4f8" stroke="#0077b6"/>
-        <circle cx="240" cy="35" r="12" fill="#0077b6"/>
-        <text class="node-icon" x="240" y="39">&#xf0e8;</text>
-        <text class="node-label" x="315" y="32">Programme</text>
-        <text class="node-sublabel" x="315" y="45">Multi-Essence Source</text>
+        <rect x="205" y="15" width="170" height="50" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="240" cy="40" r="12" fill="#0077b6"/>
+        <text class="node-icon" x="240" y="44">&#xf0e8;</text>
+        <text class="node-label" x="315" y="37">Programme</text>
+        <text class="node-sublabel" x="315" y="50">Multi-Essence Source</text>
       </g>
 
       <!-- === ROW 2: Mono Sources === -->
       <g class="dc-node" data-step="2" data-node="video-source">
-        <rect x="75" y="90" width="150" height="50" fill="#e8f4f8" stroke="#0077b6"/>
-        <circle cx="110" cy="115" r="12" fill="#0077b6"/>
-        <text class="node-icon" x="110" y="119">&#xf03d;</text>
-        <text class="node-label" x="175" y="112">Video</text>
-        <text class="node-sublabel" x="175" y="125">Source</text>
+        <rect x="75" y="100" width="150" height="50" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="110" cy="125" r="12" fill="#0077b6"/>
+        <text class="node-icon" x="110" y="129">&#xf03d;</text>
+        <text class="node-label" x="175" y="122">Video</text>
+        <text class="node-sublabel" x="175" y="135">Source</text>
       </g>
 
       <g class="dc-node" data-step="4" data-node="audio-source">
-        <rect x="345" y="90" width="150" height="50" fill="#e8f4f8" stroke="#0077b6"/>
-        <circle cx="380" cy="115" r="12" fill="#0077b6"/>
-        <text class="node-icon" x="380" y="119">&#xf130;</text>
-        <text class="node-label" x="445" y="112">Audio</text>
-        <text class="node-sublabel" x="445" y="125">Source</text>
+        <rect x="345" y="100" width="150" height="50" fill="#e8f4f8" stroke="#0077b6"/>
+        <circle cx="380" cy="125" r="12" fill="#0077b6"/>
+        <text class="node-icon" x="380" y="129">&#xf130;</text>
+        <text class="node-label" x="445" y="122">Audio</text>
+        <text class="node-sublabel" x="445" y="135">Source</text>
       </g>
 
       <!-- === ROW 3: Multi-Essence Flow === -->
       <g class="dc-node" data-step="5" data-node="multi-flow">
-        <rect x="205" y="205" width="170" height="50" fill="#fef3e8" stroke="#e67e22"/>
-        <circle cx="240" cy="230" r="12" fill="#e67e22"/>
-        <text class="node-icon" x="240" y="234">&#xf0e8;</text>
-        <text class="node-label" x="315" y="227">Programme</text>
-        <text class="node-sublabel" x="315" y="240">Multi-Essence Flow</text>
+        <rect x="205" y="185" width="170" height="50" fill="#fef3e8" stroke="#e67e22"/>
+        <circle cx="240" cy="210" r="12" fill="#e67e22"/>
+        <text class="node-icon" x="240" y="214">&#xf0e8;</text>
+        <text class="node-label" x="315" y="207">Programme</text>
+        <text class="node-sublabel" x="315" y="220">Multi-Essence Flow</text>
       </g>
 
       <!-- === ROW 4: Mono Flows === -->
       <g class="dc-node" data-step="1" data-node="video-flow">
-        <rect x="75" y="295" width="150" height="50" fill="#fef3e8" stroke="#e67e22"/>
-        <circle cx="110" cy="320" r="12" fill="#e67e22"/>
-        <text class="node-icon" x="110" y="324">&#xf03d;</text>
-        <text class="node-label" x="175" y="317">1080p50 H.264</text>
-        <text class="node-sublabel" x="175" y="330">Video Flow</text>
+        <rect x="75" y="270" width="150" height="50" fill="#fef3e8" stroke="#e67e22"/>
+        <circle cx="110" cy="295" r="12" fill="#e67e22"/>
+        <text class="node-icon" x="110" y="299">&#xf03d;</text>
+        <text class="node-label" x="175" y="292">1080p50 H.264</text>
+        <text class="node-sublabel" x="175" y="305">Video Flow</text>
       </g>
 
       <g class="dc-node" data-step="3" data-node="audio-flow">
-        <rect x="345" y="295" width="150" height="50" fill="#fef3e8" stroke="#e67e22"/>
-        <circle cx="380" cy="320" r="12" fill="#e67e22"/>
-        <text class="node-icon" x="380" y="324">&#xf130;</text>
-        <text class="node-label" x="445" y="317">48kHz PCM</text>
-        <text class="node-sublabel" x="445" y="330">Audio Flow</text>
+        <rect x="345" y="270" width="150" height="50" fill="#fef3e8" stroke="#e67e22"/>
+        <circle cx="380" cy="295" r="12" fill="#e67e22"/>
+        <text class="node-icon" x="380" y="299">&#xf130;</text>
+        <text class="node-label" x="445" y="292">48kHz PCM</text>
+        <text class="node-sublabel" x="445" y="305">Audio Flow</text>
       </g>
 
       <!-- === ROW 5: Segments === -->
       <g class="dc-node" data-step="7" data-node="video-segments">
-        <rect x="75" y="380" width="150" height="40" fill="#f0f0f0" stroke="#888"/>
-        <text class="node-label" x="150" y="404">Video Segments</text>
+        <rect x="75" y="355" width="150" height="40" fill="#f0f0f0" stroke="#888"/>
+        <text class="node-label" x="150" y="379">Video Segments</text>
       </g>
 
       <g class="dc-node" data-step="7" data-node="audio-segments">
-        <rect x="345" y="380" width="150" height="40" fill="#f0f0f0" stroke="#888"/>
-        <text class="node-label" x="420" y="404">Audio Segments</text>
+        <rect x="345" y="355" width="150" height="40" fill="#f0f0f0" stroke="#888"/>
+        <text class="node-label" x="420" y="379">Audio Segments</text>
       </g>
 
       <!-- === ACTION LABELS === -->
-      <text class="dc-action-label" data-step="1" x="150" y="288">CREATE</text>
-      <text class="dc-action-label" data-step="2" x="150" y="83" style="fill: #0077b6;">AUTO-CREATED</text>
-      <text class="dc-action-label" data-step="3" x="420" y="288">CREATE</text>
-      <text class="dc-action-label" data-step="4" x="420" y="83" style="fill: #0077b6;">AUTO-CREATED</text>
-      <text class="dc-action-label" data-step="5" x="290" y="198">CREATE + COLLECT</text>
-      <text class="dc-action-label" data-step="6" x="290" y="5" style="fill: #0077b6;">AUTO-CREATED + COLLECTED</text>
-      <text class="dc-action-label" data-step="7" x="290" y="435">UPLOAD + REGISTER</text>
+      <text class="dc-action-label" data-step="1" x="150" y="263">CREATE</text>
+      <text class="dc-action-label" data-step="2" x="150" y="93" style="fill: #0077b6;">AUTO-CREATED</text>
+      <text class="dc-action-label" data-step="3" x="420" y="263">CREATE</text>
+      <text class="dc-action-label" data-step="4" x="420" y="93" style="fill: #0077b6;">AUTO-CREATED</text>
+      <text class="dc-action-label" data-step="5" x="290" y="178">CREATE + COLLECT</text>
+      <text class="dc-action-label" data-step="6" x="290" y="8" style="fill: #0077b6;">AUTO-CREATED + COLLECTED</text>
+      <text class="dc-action-label" data-step="7" x="290" y="410">UPLOAD + REGISTER</text>
 
       <!-- === LEGEND === -->
-      <g transform="translate(20, 450)">
+      <g transform="translate(20, 430)">
         <text font-size="10" font-weight="600" fill="#333" font-family="sans-serif">Legend:</text>
 
         <line x1="60" y1="0" x2="95" y2="0" stroke="#555" stroke-width="1.5" opacity="0.5"/>
