@@ -322,3 +322,218 @@ show_sidebar: false
     <p>fa-closed-captioning</p>
   </div>
 </div>
+
+---
+
+## Key Benefits Icons
+*Icon options for the homepage key benefits tiles*
+
+### Convergence
+*A single store serving multiple purposes and business units*
+
+<div class="icon-grid">
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-compress-arrows-alt fa-3x"></i></span>
+    <p>fa-compress-arrows-alt</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-object-group fa-3x"></i></span>
+    <p>fa-object-group</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-bullseye fa-3x"></i></span>
+    <p>fa-bullseye</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-crosshairs fa-3x"></i></span>
+    <p>fa-crosshairs</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-users fa-3x"></i></span>
+    <p>fa-users</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-sitemap fa-3x"></i></span>
+    <p>fa-sitemap</p>
+  </div>
+</div>
+
+### Cost Effective
+*Cloud-based, commodity storage, no expensive file systems*
+
+<div class="icon-grid">
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-piggy-bank fa-3x"></i></span>
+    <p>fa-piggy-bank</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-coins fa-3x"></i></span>
+    <p>fa-coins</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-chart-line fa-3x"></i></span>
+    <p>fa-chart-line</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-hand-holding-usd fa-3x"></i></span>
+    <p>fa-hand-holding-usd</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-percentage fa-3x"></i></span>
+    <p>fa-percentage</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-tags fa-3x"></i></span>
+    <p>fa-tags</p>
+  </div>
+</div>
+
+### Interoperability
+*Common API specification, pick and choose tools*
+
+<div class="icon-grid">
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-plug fa-3x"></i></span>
+    <p>fa-plug</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-handshake fa-3x"></i></span>
+    <p>fa-handshake</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-puzzle-piece fa-3x"></i></span>
+    <p>fa-puzzle-piece</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-exchange-alt fa-3x"></i></span>
+    <p>fa-exchange-alt</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-sync-alt fa-3x"></i></span>
+    <p>fa-sync-alt</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-link fa-3x"></i></span>
+    <p>fa-link</p>
+  </div>
+</div>
+
+### Open Framework
+*Open source specification, no vendor lock-in or licence fees*
+
+<div class="icon-grid">
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-lock-open fa-3x"></i></span>
+    <p>fa-lock-open</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-door-open fa-3x"></i></span>
+    <p>fa-door-open</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-code fa-3x"></i></span>
+    <p>fa-code</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-globe fa-3x"></i></span>
+    <p>fa-globe</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-hands-helping fa-3x"></i></span>
+    <p>fa-hands-helping</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-book-open fa-3x"></i></span>
+    <p>fa-book-open</p>
+  </div>
+</div>
+
+### Bringing Together Live and File
+*Common architecture between live IP and stored media*
+
+<div class="icon-grid">
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-broadcast-tower fa-3x"></i></span>
+    <p>fa-broadcast-tower</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-random fa-3x"></i></span>
+    <p>fa-random</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-project-diagram fa-3x"></i></span>
+    <p>fa-project-diagram</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-network-wired fa-3x"></i></span>
+    <p>fa-network-wired</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-share-alt fa-3x"></i></span>
+    <p>fa-share-alt</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-compress-arrows-alt fa-3x"></i></span>
+    <p>fa-compress-arrows-alt</p>
+  </div>
+</div>
+
+### Elasticity
+*Scale up and down with business need*
+
+<div class="icon-grid">
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-expand-arrows-alt fa-3x"></i></span>
+    <p>fa-expand-arrows-alt</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-cloud fa-3x"></i></span>
+    <p>fa-cloud</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-chart-bar fa-3x"></i></span>
+    <p>fa-chart-bar</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-arrows-alt-v fa-3x"></i></span>
+    <p>fa-arrows-alt-v</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-balance-scale fa-3x"></i></span>
+    <p>fa-balance-scale</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-sliders-h fa-3x"></i></span>
+    <p>fa-sliders-h</p>
+  </div>
+</div>
+
+### Workflow Acceleration
+*Edit while record, immediate access, edit by reference*
+
+<div class="icon-grid">
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-tachometer-alt fa-3x"></i></span>
+    <p>fa-tachometer-alt</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-bolt fa-3x"></i></span>
+    <p>fa-bolt</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-forward fa-3x"></i></span>
+    <p>fa-forward</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-rocket fa-3x"></i></span>
+    <p>fa-rocket</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-shipping-fast fa-3x"></i></span>
+    <p>fa-shipping-fast</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-running fa-3x"></i></span>
+    <p>fa-running</p>
+  </div>
+</div>
