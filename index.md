@@ -24,15 +24,20 @@ The Time Addressable Media Store (TAMS) is an open-source API specification base
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.25rem;
     margin-top: 1.5rem;
+    justify-items: center;
   }
   .benefit-tile {
     display: flex;
-    align-items: flex-start;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
     padding: 1.25rem;
     border: 2px solid #e8e8e8;
     border-radius: 8px;
     transition: all 0.2s ease;
+    max-width: 380px;
+    width: 100%;
   }
   .benefit-tile:hover {
     border-color: #003e80;
@@ -40,8 +45,6 @@ The Time Addressable Media Store (TAMS) is an open-source API specification base
   }
   .benefit-tile .benefit-icon {
     color: #003e80;
-    flex-shrink: 0;
-    padding-top: 0.15rem;
   }
   .benefit-tile .benefit-body h4 {
     margin: 0 0 0.4rem 0;
