@@ -4,6 +4,7 @@ title: Time Addressable Media Store
 subtitle: Home of the TAMS community and latest news
 show_sidebar: true
 hero_image: /images/home_background.png
+hero_height: is-small
 ---
 
 ## What is TAMS?
