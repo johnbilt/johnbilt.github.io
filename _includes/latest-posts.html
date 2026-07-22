@@ -1,0 +1,13 @@
+<p class="title is-4">Latest Posts</p>
+
+<div class="columns is-multiline">
+    {% for post in site.posts limit: 3 %}
+        <div class="column is-12">
+            {% include post-card.html %}
+        </div>
+    {% endfor %}
+</div>
+
+<div style="text-align: center; margin-top: 0.75rem;">
+    <a href="/blog/" class="button is-info is-outlined is-small">More posts &rarr;</a>
+</div>
