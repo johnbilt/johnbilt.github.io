@@ -3,6 +3,7 @@ layout: radial-infographic
 title: TAMS Use Cases
 subtitle: What can you do with a TAMS store?
 hero_image: /images/resources_background.png
+hero_height: is-small
 show_sidebar: false
 hub_icon: fa-database
 hub_title: TAMS Store

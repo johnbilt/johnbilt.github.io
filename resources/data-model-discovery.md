@@ -3,6 +3,7 @@ layout: page
 title: TAMS Data Model
 subtitle: Content Discovery
 hero_image: /images/resources_background.png
+hero_height: is-small
 show_sidebar: false
 ---
 

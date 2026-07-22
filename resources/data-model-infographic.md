@@ -3,6 +3,7 @@ layout: infographic
 title: TAMS Data Model
 subtitle: Understanding the building blocks
 hero_image: /images/resources_background.png
+hero_height: is-small
 show_sidebar: false
 cards:
   - title: Sources

@@ -3,6 +3,7 @@ layout: partners
 title: Products & Tools
 subtitle: Directory of the solutions supporting TAMS
 hero_image: /images/community_background.png
+hero_height: is-small
 ---
 
 The following directory lists solutions that support or integrate with the TAMS specification, filterable by type (eg open source or commercial products) and capability (eg ingest, edit, discovery). 

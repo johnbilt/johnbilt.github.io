@@ -3,6 +3,7 @@ layout: page
 title: Icon Preview
 subtitle: Font Awesome icon options for data model infographic
 hero_image: /images/resources_background.png
+hero_height: is-small
 show_sidebar: false
 ---
 

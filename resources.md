@@ -3,6 +3,7 @@ layout: page
 title: Resources
 subtitle: All the tools to help get started with TAMS
 hero_image: /images/resources_background.png
+hero_height: is-small
 callouts: resources_callout
 show_sidebar: false
 ---

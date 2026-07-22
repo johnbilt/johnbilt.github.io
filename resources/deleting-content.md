@@ -3,6 +3,7 @@ layout: page
 title: Working with TAMS
 subtitle: Deleting Content in TAMS
 hero_image: /images/resources_background.png
+hero_height: is-small
 show_sidebar: false
 menubar: resources_menu
 ---
