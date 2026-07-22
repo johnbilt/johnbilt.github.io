@@ -537,3 +537,36 @@ show_sidebar: false
     <p>fa-running</p>
   </div>
 </div>
+
+
+---
+
+## Cost Effective — FA5 Money Alternatives
+*fa-money doesn't exist in FA5. Here are the replacements:*
+
+<div class="icon-grid">
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-money-bill-alt fa-3x"></i></span>
+    <p>fa-money-bill-alt</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-money-bill-wave fa-3x"></i></span>
+    <p>fa-money-bill-wave</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-dollar-sign fa-3x"></i></span>
+    <p>fa-dollar-sign</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-coins fa-3x"></i></span>
+    <p>fa-coins</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-pound-sign fa-3x"></i></span>
+    <p>fa-pound-sign</p>
+  </div>
+  <div class="icon-item">
+    <span class="icon is-large"><i class="fas fa-money-check-alt fa-3x"></i></span>
+    <p>fa-money-check-alt</p>
+  </div>
+</div>
