@@ -21,10 +21,24 @@ The Time Addressable Media Store (TAMS) is an open-source API specification base
 <style>
   .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
     margin-top: 1.5rem;
-    justify-items: center;
+  }
+  @media screen and (max-width: 768px) {
+    .benefits-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .benefits-grid .last-tile {
+    grid-column: 1 / -1;
+    max-width: 50%;
+    justify-self: center;
+  }
+  @media screen and (max-width: 768px) {
+    .benefits-grid .last-tile {
+      max-width: 100%;
+    }
   }
   .benefit-tile {
     display: flex;
@@ -32,11 +46,10 @@ The Time Addressable Media Store (TAMS) is an open-source API specification base
     align-items: center;
     text-align: center;
     gap: 0.75rem;
-    padding: 1.25rem;
+    padding: 1.5rem;
     border: 2px solid #e8e8e8;
     border-radius: 8px;
     transition: all 0.2s ease;
-    max-width: 380px;
     width: 100%;
   }
   .benefit-tile:hover {
@@ -47,8 +60,8 @@ The Time Addressable Media Store (TAMS) is an open-source API specification base
     color: #003e80;
   }
   .benefit-tile .benefit-body h4 {
-    margin: 0 0 0.4rem 0;
-    font-size: 1rem;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
     font-weight: 700;
     color: #333;
   }
@@ -63,7 +76,7 @@ The Time Addressable Media Store (TAMS) is an open-source API specification base
 <div class="benefits-grid">
   <div class="benefit-tile">
     <div class="benefit-icon">
-      <span class="icon is-large"><i class="fas fa-compress-arrows-alt fa-2x"></i></span>
+      <span class="icon is-large"><i class="fas fa-compress-arrows-alt fa-3x"></i></span>
     </div>
     <div class="benefit-body">
       <h4>Convergence</h4>
@@ -72,7 +85,7 @@ The Time Addressable Media Store (TAMS) is an open-source API specification base
   </div>
   <div class="benefit-tile">
     <div class="benefit-icon">
-      <span class="icon is-large"><i class="fas fa-hand-holding-usd fa-2x"></i></span>
+      <span class="icon is-large"><i class="fas fa-hand-holding-usd fa-3x"></i></span>
     </div>
     <div class="benefit-body">
       <h4>Cost Effective</h4>
@@ -81,7 +94,7 @@ The Time Addressable Media Store (TAMS) is an open-source API specification base
   </div>
   <div class="benefit-tile">
     <div class="benefit-icon">
-      <span class="icon is-large"><i class="fas fa-puzzle-piece fa-2x"></i></span>
+      <span class="icon is-large"><i class="fas fa-puzzle-piece fa-3x"></i></span>
     </div>
     <div class="benefit-body">
       <h4>Interoperability</h4>
@@ -90,7 +103,7 @@ The Time Addressable Media Store (TAMS) is an open-source API specification base
   </div>
   <div class="benefit-tile">
     <div class="benefit-icon">
-      <span class="icon is-large"><i class="fas fa-lock-open fa-2x"></i></span>
+      <span class="icon is-large"><i class="fas fa-lock-open fa-3x"></i></span>
     </div>
     <div class="benefit-body">
       <h4>Open Framework</h4>
@@ -99,7 +112,7 @@ The Time Addressable Media Store (TAMS) is an open-source API specification base
   </div>
   <div class="benefit-tile">
     <div class="benefit-icon">
-      <span class="icon is-large"><i class="fas fa-cubes fa-2x"></i></span>
+      <span class="icon is-large"><i class="fas fa-cubes fa-3x"></i></span>
     </div>
     <div class="benefit-body">
       <h4>Bringing Together Live and File</h4>
@@ -108,16 +121,16 @@ The Time Addressable Media Store (TAMS) is an open-source API specification base
   </div>
   <div class="benefit-tile">
     <div class="benefit-icon">
-      <span class="icon is-large"><i class="fas fa-cloud fa-2x"></i></span>
+      <span class="icon is-large"><i class="fas fa-cloud fa-3x"></i></span>
     </div>
     <div class="benefit-body">
       <h4>Elasticity</h4>
       <p>The use of the cloud and cloud-based technologies means that a TAMS solution should be able to scale both up and down with the business need. This is particularly key in live environments where the workloads are rarely constant.</p>
     </div>
   </div>
-  <div class="benefit-tile">
+  <div class="benefit-tile last-tile">
     <div class="benefit-icon">
-      <span class="icon is-large"><i class="fas fa-rocket fa-2x"></i></span>
+      <span class="icon is-large"><i class="fas fa-rocket fa-3x"></i></span>
     </div>
     <div class="benefit-body">
       <h4>Workflow Acceleration</h4>
