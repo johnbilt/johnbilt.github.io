@@ -6,6 +6,10 @@ image: /images/blog_images/2025_broadcast_awards_nomination.jpg
 hero_image: /images/blog_images/2025_broadcast_awards_team.jpg
 hero_height: is-small
 hero_darken: true
+tags:
+    - IBC
+    - Awards
+    - Reuters
 ---
 
 On Thursday 27th November the [IBC demonstration of Next Generation News Distribution using TAMS](/2025/09/12/IBC-demo-videos.html) won the Broadcast Tech Innovation award.

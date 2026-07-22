@@ -6,6 +6,10 @@ image: /images/blog_images/tamscon1.png
 hero_image: /images/blog_images/tamscon1.png
 hero_height: is-small
 hero_darken: true
+tags:
+    - TAMSCon
+    - Events
+    - Community
 ---
 
 Signup is now available for the the first ever TAMS Community event TAMSCon.

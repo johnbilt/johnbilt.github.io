@@ -6,6 +6,10 @@ image: /images/blog_images/2026-tvbeurope-webinar.png
 hero_image: /images/blog_images/2026-tvbeurope-webinar.png
 hero_height: is-small
 hero_darken: true
+tags:
+    - Press
+    - TVBEurope
+    - Techex
 ---
 
 TVBEurope and Techex webinar 'Is it Primetime for TAMS?' is now available to watch online, plus a dedicated article on the TVBEurope website.

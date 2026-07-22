@@ -6,6 +6,10 @@ image: /images/blog_images/tams-tsc-selection.png
 hero_image: /images/blog_images/tams-tsc-selection.png
 hero_height: is-small
 hero_darken: true
+tags:
+    - Governance
+    - TSC
+    - Open Source
 ---
 
 This post is intended to support the [communication](https://github.com/bbc/tams/blob/main/GOVERNANCE.md) set out on 28<sup>th</sup> January 2026, which details the process of moving TAMS towards open governance. This document details how the remaining two seats on the initial TAMS TSC will be filled.

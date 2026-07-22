@@ -6,6 +6,11 @@ image: /images/blog_images/2026_governance_blog_header.jpg
 hero_image: /images/blog_images/2026_governance_blog_header.jpg
 hero_height: is-small
 hero_darken: true
+tags:
+    - Governance
+    - TSC
+    - Open Source
+    - BBC
 ---
 
 In 2023 BBC Research & Development made the first open source release of TAMS at [https://github.com/bbc/tams/](https://github.com/bbc/tams/), and has owned the repository and co-ordinated contributions ever since. 

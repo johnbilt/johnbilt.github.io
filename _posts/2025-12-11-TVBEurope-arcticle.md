@@ -6,6 +6,10 @@ image: /images/blog_images/TVBEurope_TAMS_Article_Dec_2025.png
 hero_image: /images/blog_images/TVBEurope_TAMS_Article_Dec_2025.png
 hero_height: is-small
 hero_darken: true
+tags:
+    - Press
+    - TVBEurope
+    - Techex
 ---
 
 TVBEurope have publised a dedicated three page article focusing on TAMS in their December issue.

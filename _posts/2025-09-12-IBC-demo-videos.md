@@ -6,6 +6,12 @@ image: /images/blog_images/ibc2025_stand.jpg
 hero_image: /images/blog_images/ibc2025_stand.jpg
 hero_height: is-small
 hero_darken: true
+tags:
+    - IBC
+    - Trade Show
+    - Reuters
+    - Demo
+    - AWS
 ---
 
 This blog includes the details of the two TAMS demonstrations at IBC 2025.  These can be seen on the AWS booth in Hall 5.

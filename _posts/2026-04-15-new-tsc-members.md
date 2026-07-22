@@ -6,6 +6,10 @@ image: /images/blog_images/tams-tsc-selection-cropped.png
 hero_image: /images/blog_images/tams-tsc-selection-cropped.png
 hero_height: is-small
 hero_darken: true
+tags:
+    - Governance
+    - TSC
+    - Community
 ---
 
 The Time Addressable Media Store (TAMS) project today announced the appointment of James Elliott (Elliott Media) and Glenn Pedersen (CuttingRoom) to its initial Technical Steering Committee (TSC), marking a significant milestone in the project's transition to full open source governance.
