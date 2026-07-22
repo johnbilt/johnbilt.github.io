@@ -4,6 +4,7 @@ title: TVBEurope Webinar and Article
 subtitle: Catch up on the Primetime for TAMS Webinar
 image: /images/blog_images/2026-tvbeurope-webinar.png
 hero_image: /images/blog_images/2026-tvbeurope-webinar.png
+hero_height: is-small
 hero_darken: true
 ---
 

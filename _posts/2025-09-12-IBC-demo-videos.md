@@ -4,6 +4,7 @@ title: AWS IBC 2025 Demo Videos
 subtitle: Watch the IBC demo videos
 image: /images/blog_images/ibc2025_stand.jpg
 hero_image: /images/blog_images/ibc2025_stand.jpg
+hero_height: is-small
 hero_darken: true
 ---
 

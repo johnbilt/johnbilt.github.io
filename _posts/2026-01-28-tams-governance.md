@@ -4,6 +4,7 @@ title: Moving TAMS towards Open Governance
 hero_darken: true
 image: /images/blog_images/2026_governance_blog_header.jpg
 hero_image: /images/blog_images/2026_governance_blog_header.jpg
+hero_height: is-small
 hero_darken: true
 ---
 

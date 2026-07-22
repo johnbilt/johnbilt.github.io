@@ -4,6 +4,7 @@ title: TVBEurope TAMS Article
 subtitle: Dedicated press article on TAMS
 image: /images/blog_images/TVBEurope_TAMS_Article_Dec_2025.png
 hero_image: /images/blog_images/TVBEurope_TAMS_Article_Dec_2025.png
+hero_height: is-small
 hero_darken: true
 ---
 

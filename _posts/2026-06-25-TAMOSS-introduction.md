@@ -5,6 +5,7 @@ title: TAMS is a Kubernetes-shaped problem
 subtitle: Guest post from David O'Dwyer at LiveWyer 
 image: /images/blog_images/2026-livewyer-blog-heading.png
 hero_image: /images/blog_images/2026-livewyer-blog-heading.png
+hero_height: is-small
 hero_darken: true
 title: "TAMS is a Kubernetes-shaped problem"
 description: "TAMOSS is the LiveWyer open-source, Kubernetes-native implementation of the TAMS API: why a time-addressable media store is a Kubernetes-shaped problem, and how it was built."

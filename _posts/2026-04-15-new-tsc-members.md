@@ -4,6 +4,7 @@ title: Two New Appointments to the TAMS TSC
 subtitle: James Elliott and Glenn Pedersen join the TAMS Technical Steering Committee
 image: /images/blog_images/tams-tsc-selection-cropped.png
 hero_image: /images/blog_images/tams-tsc-selection-cropped.png
+hero_height: is-small
 hero_darken: true
 ---
 

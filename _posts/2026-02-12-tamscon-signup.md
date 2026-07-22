@@ -4,6 +4,7 @@ title: TAMSCon Community Event
 subtitle: Signup now available....
 image: /images/blog_images/tamscon1.png
 hero_image: /images/blog_images/tamscon1.png
+hero_height: is-small
 hero_darken: true
 ---
 
