@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Working with TAMS
+title: Guide to Working With TAMS
 subtitle: Edit By Reference
 hero_image: /images/resources_background.png
 hero_height: is-small

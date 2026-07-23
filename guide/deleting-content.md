@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Working with TAMS
-subtitle: Deleting Content in TAMS
+title: Guide to Working With TAMS
+subtitle: Deleting Content
 hero_image: /images/resources_background.png
 hero_height: is-small
 hero_darken: true

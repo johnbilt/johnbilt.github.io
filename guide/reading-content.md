@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Working with TAMS
-subtitle: Reading Content from TAMS
+title: Guide to Working With TAMS
+subtitle: Reading Content
 hero_image: /images/resources_background.png
 hero_height: is-small
 hero_darken: true

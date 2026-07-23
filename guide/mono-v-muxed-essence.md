@@ -1,6 +1,6 @@
 ---
 layout: page
-title: TAMS Data Model
+title: Guide to Working With TAMS
 subtitle: Mono Essence v Muxed Media
 hero_image: /images/resources_background.png
 hero_height: is-small

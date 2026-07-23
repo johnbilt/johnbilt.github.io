@@ -1,6 +1,6 @@
 ---
 layout: infographic
-title: TAMS Data Model
+title: Guide to Working With TAMS
 subtitle: Understanding the building blocks
 hero_image: /images/resources_background.png
 hero_height: is-small
