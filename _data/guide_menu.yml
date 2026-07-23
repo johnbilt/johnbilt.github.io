@@ -1,0 +1,14 @@
+- label: Guide
+  items:
+    - name: TAMS Data Model
+      link: /guide/
+    - name: Reading Content
+      link: /guide/reading-content
+    - name: Creating Content
+      link: /guide/creating-content
+    - name: Edit By Reference
+      link: /guide/edit-by-reference
+    - name: Mono v Muxed Essence
+      link: /guide/mono-v-muxed-essence
+    - name: Deleting Content
+      link: /guide/deleting-content

@@ -4,7 +4,9 @@ title: TAMS Data Model
 subtitle: Understanding the building blocks
 hero_image: /images/resources_background.png
 hero_height: is-small
+hero_darken: true
 show_sidebar: false
+menubar: guide_menu
 cards:
   - title: Sources
     icon: fa-project-diagram

@@ -4,8 +4,9 @@ title: Working with TAMS
 subtitle: Edit By Reference
 hero_image: /images/resources_background.png
 hero_height: is-small
+hero_darken: true
 show_sidebar: false
-menubar: resources_menu
+menubar: guide_menu
 ---
 
 In a traditional edit workflow all the frames of the new edit need to be rendered into a new file which is then written out to storage.  For many simple edits the actual content can be largely unchanged, however the essence needs to be duplicated in order to have a file which can be played back directly.

@@ -1,18 +1,13 @@
 ---
 layout: page
 title: TAMS Data Model
-subtitle: Introduction
+subtitle: Mono Essence v Muxed Media
 hero_image: /images/resources_background.png
 hero_height: is-small
+hero_darken: true
 show_sidebar: false
-menubar: resources_menu
+menubar: guide_menu
 ---
-
-
-
-
-
-### Mono Essence v Muxed Media
 
 Creating new content in a TAMS store starts with the creation of the relevant essence flows.  For simplicity in the workflows it is recommended that mono-essence flows are used.  This means separating audio and video into separate segments and registering them under separate flows. 
 
@@ -21,3 +16,8 @@ The separation means that for workflows where multiple video resolutions share t
 It is possible to use muxed media files where the workflow requires this.  In this scenario the muxed media segments are registered directly to the multi-essence flow. It is still necessary to have the separate essence flows as these contain the technical parameters for the essence.  There are also additional container mapping elements added to the essence flows to point to the relevant tracks within the muxed essence files.
 
 ![Diagram showing separate media segments compared to muxed media segments](/images/mono_and_muxed_essence.png)
+
+### Multiple Muxed Media Sets
+
+
+

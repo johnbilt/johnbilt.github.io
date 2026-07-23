@@ -4,8 +4,9 @@ title: Working with TAMS
 subtitle: Deleting Content in TAMS
 hero_image: /images/resources_background.png
 hero_height: is-small
+hero_darken: true
 show_sidebar: false
-menubar: resources_menu
+menubar: guide_menu
 ---
 
 Within TAMS all content deletions happen at the Flow level.  There are three ways that content can be deleted:
