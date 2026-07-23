@@ -74,7 +74,7 @@ show_sidebar: false
     <div class="resource-icon">
       <span class="icon is-large"><i class="fab fa-aws fa-3x"></i></span>
     </div>
-    <h4>Reference TAMS API Implementation</h4>
+    <h4>AWS Reference TAMS API Implementation</h4>
     <p>Implementation of the TAMS API released by AWS. Designed to assist customers and partners start their journey with TAMS.</p>
     <a class="resource-link" href="https://github.com/awslabs/time-addressable-media-store" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
   </div>
@@ -82,7 +82,7 @@ show_sidebar: false
     <div class="resource-icon">
       <span class="icon is-large"><i class="fas fa-toolbox fa-3x"></i></span>
     </div>
-    <h4>TAMS Tools Repository</h4>
+    <h4>AWS TAMS Tools Repository</h4>
     <p>A collection of tools from AWS to complement the API implementation. Includes UI with embedded Omakase player, media processing and more.</p>
     <a class="resource-link" href="https://github.com/awslabs/time-addressable-media-store-tools" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
   </div>
