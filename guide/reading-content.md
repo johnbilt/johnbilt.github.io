@@ -6,8 +6,9 @@ hero_image: /images/resources_background.png
 hero_height: is-small
 hero_darken: true
 show_sidebar: false
-menubar: guide_menu
 ---
+
+{% include guide-nav.html %}
 
 Click any element in the diagram below to understand how the TAMS data model is structured for content discovery.
 

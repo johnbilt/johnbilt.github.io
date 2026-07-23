@@ -6,7 +6,6 @@ hero_image: /images/resources_background.png
 hero_height: is-small
 hero_darken: true
 show_sidebar: false
-menubar: guide_menu
 cards:
   - title: Sources
     icon: fa-project-diagram
@@ -133,6 +132,8 @@ cards:
 
       **Example:** A Source tagged with `language_code: eng` and `auth_classes: news-team,editors`. Its Flows tagged with `flow_status: active`, `input_quality: contribution`, and `segment_retention_offset: 604800:0` (auto-delete segments after 7 days). A QC system watches for `flow_status: active` and triggers automated quality checks.
 ---
+
+{% include guide-nav.html %}
 
 ## Key TAMS Concepts
 

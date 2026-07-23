@@ -6,8 +6,9 @@ hero_image: /images/resources_background.png
 hero_height: is-small
 hero_darken: true
 show_sidebar: false
-menubar: guide_menu
 ---
+
+{% include guide-nav.html %}
 
 The TAMS data model is built up step by step. Flows are the primary element you create — Sources and their relationships are managed automatically by the store. Use the controls below to walk through the creation sequence.
 

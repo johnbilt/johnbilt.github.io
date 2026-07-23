@@ -6,8 +6,9 @@ hero_image: /images/resources_background.png
 hero_height: is-small
 hero_darken: true
 show_sidebar: false
-menubar: guide_menu
 ---
+
+{% include guide-nav.html %}
 
 Within TAMS all content deletions happen at the Flow level.  There are three ways that content can be deleted:
 

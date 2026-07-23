@@ -6,8 +6,9 @@ hero_image: /images/resources_background.png
 hero_height: is-small
 hero_darken: true
 show_sidebar: false
-menubar: guide_menu
 ---
+
+{% include guide-nav.html %}
 
 Creating new content in a TAMS store starts with the creation of the relevant essence flows.  For simplicity in the workflows it is recommended that mono-essence flows are used.  This means separating audio and video into separate segments and registering them under separate flows. 
 

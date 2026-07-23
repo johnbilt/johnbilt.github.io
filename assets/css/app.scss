@@ -3,14 +3,3 @@
 $primary: #003e80;
 // Import Main CSS file from theme
 @import "main";
-
-// Narrow the sidebar menubar
-.column.is-4-desktop.is-4-tablet {
-  flex: none;
-  width: 20%;
-}
-@media screen and (max-width: 768px) {
-  .column.is-4-desktop.is-4-tablet {
-    width: 100%;
-  }
-}
