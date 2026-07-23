@@ -88,6 +88,14 @@ show_sidebar: false
   </div>
   <div class="resource-tile">
     <div class="resource-icon">
+      <span class="icon is-large"><i class="fab fa-python fa-3x"></i></span>
+    </div>
+    <h4>TAMS Sample Scripts</h4>
+    <p>A set of Python sample scripts to help get started with the TAMS API. Covers common workflows and provides working examples to build on.</p>
+    <a class="resource-link" href="https://github.com/aws-solutions-library-samples/guidance-for-cloud-native-fast-turnaround-media-workflows-on-aws" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+  </div>
+  <div class="resource-tile">
+    <div class="resource-icon">
       <span class="icon is-large"><i class="fas fa-book-open fa-3x"></i></span>
     </div>
     <h4>AWS TAMS Implementation Guide</h4>
