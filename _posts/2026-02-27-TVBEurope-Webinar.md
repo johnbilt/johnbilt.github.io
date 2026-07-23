@@ -2,7 +2,7 @@
 layout: post
 title: TVBEurope Webinar and Article
 subtitle: Catch up on the Primetime for TAMS Webinar
-image: /images/blog_images/2026-tvbeurope-webinar.png
+image: /images/blog_images/2026-tvbeurope-webinar-header.png
 hero_image: /images/blog_images/2026-tvbeurope-webinar.png
 hero_height: is-small
 hero_darken: true
@@ -15,6 +15,8 @@ tags:
 TVBEurope and Techex webinar 'Is it Primetime for TAMS?' is now available to watch online, plus a dedicated article on the TVBEurope website.
 
 ### Webinar available online
+
+![Screenshot from webinar](/images/blog_images/2026-tvbeurope-webinar.png)
 
 On Thursday 12th February 12th TVBEurope and techex hosted a webinar to explore what TAMS is, its global potential, and the agility it can deliver in near-live editing and production workflows.  The webinar was chaired by Jenny Priestley (Content Director, TVBEurope) and will featured contributions from:
 

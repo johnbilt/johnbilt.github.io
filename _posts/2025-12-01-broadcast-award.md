@@ -2,7 +2,7 @@
 layout: post
 title: TAMS wins Broadcast Tech Innovation Award
 subtitle: Next Generation News Distribution Powered by TAMS wins award
-image: /images/blog_images/2025_broadcast_awards_nomination.jpg
+image: /images/blog_images/2025_broadcast_awards_header.jpg
 hero_image: /images/blog_images/2025_broadcast_awards_team.jpg
 hero_height: is-small
 hero_darken: true
