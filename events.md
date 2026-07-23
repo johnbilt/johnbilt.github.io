@@ -4,6 +4,7 @@ title: Events
 subtitle: Upcoming events relating to TAMS
 hero_image: /images/events_background.png
 hero_height: is-small
+hero_darken: true
 ---
 
 # Webinar: From Files to Timelines — How TAMS is Rewiring Live Media Workflows

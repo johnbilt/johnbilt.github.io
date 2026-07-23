@@ -4,6 +4,7 @@ title: About
 subtitle: Introduction to Time Addressable Media and TAMS
 hero_image: /images/about_background.png
 hero_height: is-small
+hero_darken: true
 show_sidebar: false
 menubar: about_menu
 ---
