@@ -6,6 +6,7 @@ image: /images/blog_images/tamscon1.png
 hero_image: /images/blog_images/tamscon1.png
 hero_height: is-small
 hero_darken: true
+author: John Biltcliffe
 tags:
     - TAMSCon
     - Events

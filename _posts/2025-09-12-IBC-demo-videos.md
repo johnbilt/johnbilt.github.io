@@ -6,6 +6,7 @@ image: /images/blog_images/ibc2025_stand.jpg
 hero_image: /images/blog_images/ibc2025_stand.jpg
 hero_height: is-small
 hero_darken: true
+author: John Biltcliffe
 tags:
     - IBC
     - Trade Show

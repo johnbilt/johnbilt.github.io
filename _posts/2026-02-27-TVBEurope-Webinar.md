@@ -6,6 +6,7 @@ image: /images/blog_images/2026-tvbeurope-webinar-header.png
 hero_image: /images/blog_images/2026-tvbeurope-webinar.png
 hero_height: is-small
 hero_darken: true
+author: John Biltcliffe
 tags:
     - Press
     - TVBEurope

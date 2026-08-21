@@ -6,6 +6,7 @@ image: /images/blog_images/tams-tsc-selection-cropped.png
 hero_image: /images/blog_images/tams-tsc-selection-cropped.png
 hero_height: is-small
 hero_darken: true
+author: Sam Mesterton-Gibbons
 tags:
     - Governance
     - TSC

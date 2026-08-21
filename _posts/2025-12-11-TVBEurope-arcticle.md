@@ -6,6 +6,7 @@ image: /images/blog_images/TVBEurope_TAMS_Article_Dec_2025_header.png
 hero_image: /images/blog_images/TVBEurope_TAMS_Article_Dec_2025.png
 hero_height: is-small
 hero_darken: true
+author: John Biltcliffe
 tags:
     - Press
     - TVBEurope

@@ -6,6 +6,7 @@ image: /images/blog_images/2025_broadcast_awards_header.png
 hero_image: /images/blog_images/2025_broadcast_awards_team.jpg
 hero_height: is-small
 hero_darken: true
+author: John Biltcliffe
 tags:
     - IBC
     - Awards
